@@ -1,0 +1,214 @@
+// ======================================================
+// Layout :: Grid
+// ======================================================
+
+.container-login{
+  max-width: 1170px;
+  padding: 0 15px;
+  width: 100%;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  @include tablet{
+    width: 600px;
+  }
+  @include mobile-horizontal{
+    width: 100%;
+  }
+}
+.row-login{
+  margin: 0 -4px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.row-vsd{
+  margin: 0 -6px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.col-pc-6{
+  padding: 0 10px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  position: relative;
+}
+.col-msb-30{
+  padding: 0 15px;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
+  max-width: 30%;
+  @include tablet{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.col-pc-2{
+  padding: 0 9px;
+  -ms-flex: 0 0 16.666667%;
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+.col-msb-70{
+  padding: 0 15px;
+  -ms-flex: 0 0 70%;
+  flex: 0 0 70%;
+  max-width: 70%;
+  @include tablet{
+    display: none;
+  }
+}
+.col-login-6{
+  padding: 0 4px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.row-msb-9{
+  margin: 0 -9px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.col-msb-22{
+  padding: 0 9px;
+  -ms-flex: 0 0 22%;
+  flex: 0 0 22%;
+  max-width: 22%;
+  position: relative;
+  @media (max-width: 1320px) {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  @include desktop-sls{
+    padding: 0 9px;
+    -ms-flex: 0 0 22%;
+    flex: 0 0 22%;
+    max-width: 22%;
+    position: relative;
+  }
+}
+.col-msb-78{
+  padding: 0 9px;
+  -ms-flex: 0 0 78%;
+  flex: 0 0 78%;
+  max-width: 78%;
+  position: relative;
+  @media (max-width: 1320px) {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  @include desktop-sls{
+    padding: 0 9px;
+    -ms-flex: 0 0 78%;
+    flex: 0 0 78%;
+    max-width: 78%;
+    position: relative;
+  }
+}
+.col-msb-12{
+  padding: 0 9px;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+  position: relative;
+}
+.row-pc{
+  margin: 0 -9px;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+.col-pc-3{
+  padding: 0 9px;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+  @include mobile-horizontal{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.col-pc-4{
+  padding: 0 9px;
+  -ms-flex: 0 0 33.3333%;
+  flex: 0 0 33.3333%;
+  max-width: 33.3333%;
+  @include mobile-horizontal{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.col-pc-6{
+  padding: 0 9px;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+  @include mobile-horizontal{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+.col-pc-8{
+  padding: 0 9px;
+  -ms-flex: 0 0 66.6666%;
+  flex: 0 0 66.6666%;
+  max-width: 66.6666%;
+  @include mobile-horizontal{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.col-pc-12{
+  padding: 0 9px;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.container-newadd{
+  max-width: 1236px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 18px;
+}
+
+.col-msb-44 {
+  padding: 0 9px;
+  -ms-flex: 0 0 44%;
+  flex: 0 0 44%;
+  max-width: 44%;
+  position: relative;
+}
+.col-msb-12x {
+  padding: 0 9px;
+  -ms-flex: 0 0 12%;
+  flex: 0 0 12%;
+  max-width: 12%;
+  position: relative;
+}
+
+.row-flex-between {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
