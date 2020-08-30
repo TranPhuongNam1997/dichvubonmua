@@ -85,3 +85,21 @@ button[data-ripple]{
     background-position: 100% center;
   }
 }
+button.btn-call-mechanic.call-mechanic-child{
+  width: 170px;
+}
+.send-rate{
+  border: 1px solid #349A1B;
+  border-radius: 100px;
+  background: #349A1B;
+  transition: all 0.3s;
+  color: #fff;
+  font-weight: 500;
+  width: 99px;
+  height: 40px;
+  &:hover{
+    background: #fff;
+    color: #349A1B;
+    transition: all 0.3s;
+  }
+}
