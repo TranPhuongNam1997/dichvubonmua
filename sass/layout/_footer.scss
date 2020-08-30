@@ -2,27 +2,70 @@
 // Layout :: Footer
 // ======================================================
 
-#back-to-top{
+footer{
+  background: #1D262D;
+  .sub-foot{
+    color: #A5B8AD;
+  }
+}
+.logo-foot{
+  margin-top: 47px;
+  margin-bottom: 27px;
+}
+.title-foot{
+  font-size: 16px;
+  line-height: 20px;
+  color: #DEDEDE;
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+.list-foot{
+  li{
+    margin-bottom: 10px;
+    a{
+      color: #A5B8AD;
+      transition: all 0.3s;
+      &:hover{
+        transition: all 0.3s;
+        color: #fff;
+      }
+    }
+  }
+}
+.foot-right{
+  margin-top: 87px;
+}
+.icon-fb,.icon-yt{
+  display: inline-block;
+}
+.icon-fb{
+  margin-right: 18px;
+}
+.copy-right{
+  margin-top: 52px;
+  border-top: 1px solid #424543;
+  padding: 20px 0;
+  color: #A5B8AD;
+}
+
+a.btn-scrolltop {
   position: fixed;
-  bottom: 25px;
-  right: 25px;
-  width: 31px;
-  height: 31px;
-  background: $c-bl;
-  color: #fff;
+  width: 40px;
+  height: 40px;
   text-align: center;
-  line-height: 31px;
-  font-size: 18px;
-  font-weight: bold;
-  background-size: 100% 100%;
+  line-height: 39px;
+  color: #fff;
+  background: #3a9c19;
+  bottom: 15px;
+  right: 15px;
+  font-size: 25px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
   display: none;
-  z-index: 100;
-  border-radius: 7px;
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  -ms-border-radius: 7px;
-  -o-border-radius: 7px;
+  transition: all 0.3s;
   &:hover{
-    background: rgb(8, 51, 107);
+    background: #44b11f;
+    transition: all 0.3s;
   }
 }

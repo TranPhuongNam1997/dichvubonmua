@@ -7,11 +7,10 @@ button[data-ripple]{
 }
 .btn-call-mechanic{
   background-image: linear-gradient(to right, #349A1B 0%, #8EBD00 51%, #349A1B 100%);
-  padding: 11px 24px;
+  padding: 12px 24px;
   text-align: center;
-  font-size: 16px;
   color: #fff;
-  border: 1px solid transparent;
+  border: none;
   border-radius: 100px;
   transition: all 0.5s;
   position: relative;

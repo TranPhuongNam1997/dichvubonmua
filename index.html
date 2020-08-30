@@ -12,12 +12,21 @@
     <link rel="stylesheet" href="libs/css/all.css">
     <link rel="stylesheet" href="libs/css/slick.css">
     <link rel="stylesheet" href="libs/css/slick-theme.css">
+    <link rel="stylesheet" href="libs/css/animate.min.css">
+
+    <link rel="stylesheet" href="libs/css/aos.css">
 
     <link rel="stylesheet" href="sass/main.css">
 
+
     <script type="text/javascript" src="libs/js/jquery-3.5.1.min.js"></script>
     <script type="text/javascript" src="libs/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="libs/js/effect-modal.js"></script>
+
+    <script type="text/javascript" src="libs/js/wow.js"></script>
+    <script> new WOW().init(); </script>
+
+
+    <script type="text/javascript" src="libs/js/aos.js"></script>
 
     <script type="text/javascript" src="libs/js/script.js"></script>
 
@@ -34,14 +43,21 @@
                         <nav class="navigation">
                             <ul class="menu clearfix">
                                 <li><a href="#">Trang chủ</a></li>
-                                <li><a href="#">Các dịch vụ<i class="fas fa-angle-down"></i></a></li>
+                                <li class="has-dropdown"><a href="#">Các dịch vụ<i class="fas fa-angle-down"></i></a>
+                                    <ul class="dropdown-child">
+                                        <li><a href="#">Dịch vụ 1</a></li>
+                                        <li><a href="#">Dịch vụ 2</a></li>
+                                        <li><a href="#">Dịch vụ 3</a></li>
+                                    </ul>
+
+                                </li>
                                 <li><a href="#">Tin tức</a></li>
-                                <li><a href="#">Chính sách pháp lý<i class="fas fa-angle-down"></a></i></li>
+                                <li><a href="#">Chính sách pháp lý<i class="fas fa-angle-down"></i></a></li>
                             </ul>
                         </nav>
                         <div class="btn-blockx">
-                            <button class="btn-call-mechanic">Gọi thợ</button>
-                            <button class="btn-login">Đăng nhập</button>
+                            <button class="btn-call-mechanic" data-ripple>Gọi thợ</button>
+                            <button class="btn-login" data-ripple>Đăng nhập</button>
                         </div>
                     </div>
                 </div>
@@ -49,17 +65,17 @@
 
 
             <div>
-                <div class="banner-left"><img src="img/banner-left.svg" alt="ảnh"></div>
-                <div class="banner-right"><img src="img/banner-right.svg" alt="ảnh"></div>
-                <div class="banner-bottom"><img src="img/banner-bot.svg" alt="ảnh"></div>
-                <div class="banner-top"><img src="img/banner-top.svg" alt="ảnh"></div>
+                <div class="banner-left wow bounceInLeft" data-wow-duration="1.5s" data-wow-delay="0.5s"><img src="img/banner-left.svg" alt="ảnh"></div>
+                <div class="banner-right wow bounceInRight" data-wow-delay="1s"><img src="img/banner-right.svg" alt="ảnh"></div>
+                <div class="banner-bottom wow bounceIn" data-wow-delay="1.5s"><img src="img/banner-bot.svg" alt="ảnh"></div>
+                <div class="banner-top wow bounceInDown"><img src="img/banner-top.svg" alt="ảnh"></div>
             </div>
-            <div class="sub-banner">
+            <div class="sub-banner wow fadeIn">
                 <h2 class="slogan">Chúng Tôi Làm Việc. Bạn Thư giãn</h2>
                 <div class="sub-slogan">Nhân Viên Tiêu Chuẩn - Cam Kết Chất Lượng</div>
                 <div class="btn-sub">
-                    <button class="btn-callnow">Gọi Thợ Ngay</button>
-                    <button class="btn-research-more">Tìm Hiểu Thêm</button>
+                    <button class="btn-callnow" data-ripple>Gọi Thợ Ngay</button>
+                    <button class="btn-research-more" data-ripple>Tìm Hiểu Thêm</button>
                 </div>
             </div>
         </header>
@@ -72,25 +88,25 @@
                             <h3 class="title-section">Dịch Vụ Bốn Mùa - là một đội ngũ kỹ sư chuyên nghiệp, năng động</h3>
                             <div class="sub-title">Chúng tôi là những chuyên gia trong việc các cấp các dịch vụ bảo dưỡng uy tín, chuyên nghiệp và an toàn cho văn phòng, nhà ở và công ty.</div>
                             <div class="sub-title-bottom">Dịch vụ của chúng tôi gồm những dịch vụ bảo dưỡng nhà ở, kiểm tra và nghiệm thu, xử lý sự cố, sửa chữa, nâng cấp và thay đổi cho các hệ thống điện, cấp thoát nước, phòng cháy chữa cháy, hệ thống điện lạnh</div>
-                            <button class="btn-contact">Liên Hệ Với Chúng Tôi</button>
+                            <button class="btn-contact" data-ripple data-aos="zoom-in">Liên Hệ Với Chúng Tôi</button>
                         </div>
                         <div class="col-md-6">
                             <ul class="list-services">
-                                <li>
+                                <li data-aos="fade-right">
                                     <img src="img/about-us1.svg" alt="ảnh">
                                     <div class="txt-services">Gia Đình</div>
                                 </li>
-                                <li>
+                                <li data-aos="fade-down">
                                     <img src="img/about-us2.svg" alt="ảnh">
-                                    <div class="txt-services">Gia Đình</div>
+                                    <div class="txt-services">Văn phòng</div>
                                 </li>
-                                <li>
+                                <li data-aos="fade-left">
                                     <img src="img/about-us3.svg" alt="ảnh">
-                                    <div class="txt-services">Gia Đình</div>
+                                    <div class="txt-services">Điện nước</div>
                                 </li>
-                                <li>
+                                <li data-aos="fade-up">
                                     <img src="img/about-us4.svg" alt="ảnh">
-                                    <div class="txt-services">Gia Đình</div>
+                                    <div class="txt-services">Dịch vụ khác</div>
                                 </li>
                             </ul>
                         </div>
@@ -111,35 +127,35 @@
                     <div class="row justify-content-center">
                         <div class="col-8">
                             <ul class="list-procedure">
-                                <li>
+                                <li data-aos="fade-up" data-aos-duration="1000">
                                     <div class="number-order">1</div>
                                     <div class="block-step">
                                         <h3 class="name-step">Chọn dịch vụ</h3>
                                         <div class="sub-step">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
                                     </div>
                                 </li>
-                                <li>
+                                <li data-aos="fade-up" data-aos-duration="1000">
                                     <div class="number-order">2</div>
                                     <div class="block-step">
                                         <h3 class="name-step">Nhập thông tin</h3>
                                         <div class="sub-step">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
                                     </div>
                                 </li>
-                                <li>
+                                <li data-aos="fade-up" data-aos-duration="1000">
                                     <div class="number-order">3</div>
                                     <div class="block-step">
                                         <h3 class="name-step">Xác nhận đặt dịch vụ</h3>
                                         <div class="sub-step">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
                                     </div>
                                 </li>
-                                <li>
+                                <li data-aos="fade-up" data-aos-duration="1000">
                                     <div class="number-order">4</div>
                                     <div class="block-step">
                                         <h3 class="name-step">Hoàn thành & thanh toán</h3>
                                         <div class="sub-step">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</div>
                                     </div>
                                 </li>
-                                <li>
+                                <li data-aos="fade-up" data-aos-duration="1000">
                                     <div class="number-order">5</div>
                                     <div class="block-step">
                                         <h3 class="name-step">Đánh giá thợ</h3>
@@ -160,18 +176,20 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5">
-                            <img src="img/iphone.svg" class="icon-phone" alt="ảnh">
+                            <img src="img/iphone.svg" class="icon-phone" alt="ảnh" data-aos="zoom-in">
                         </div>
                         <div class="col-md-7">
-                            <div class="title-app">Ứng dụng <span>Dịch Vụ Bốn Mùa</span> tiện lợi</div>
+                            <div class="title-app" data-aos="fade-left">Ứng dụng <span>Dịch Vụ Bốn Mùa</span> tiện lợi</div>
                             <ul class="list-utilies">
-                                <li><i class="fa fa-check"></i>Đặt dịch vụ chỉ với vài bước đơn giản</li>
-                                <li><i class="fa fa-check"></i>Có thông tin Người giúp việc sẽ đến làm tại nhà</li>
-                                <li><i class="fa fa-check"></i>Quản lý thời gian, đánh giá chất lượng</li>
-                                <li><i class="fa fa-check"></i>Quản lý lịch sử, số tiền đã sử dụng</li>
-                                <li><i class="fa fa-check"></i>Ưu đãi giảm 50K khi đặt qua app lần đầu</li>
+                                <li  data-aos="fade-left"><i class="fa fa-check"></i>Đặt dịch vụ chỉ với vài bước đơn giản</li>
+                                <li  data-aos="fade-left"><i class="fa fa-check"></i>Có thông tin Người giúp việc sẽ đến làm tại nhà</li>
+                                <li  data-aos="fade-left"><i class="fa fa-check" data-wow-delay="0.3s"></i>Quản lý thời gian, đánh giá chất lượng</li>
+                                <li  data-aos="fade-left"><i class="fa fa-check" data-wow-delay="0.5s"></i>Quản lý lịch sử, số tiền đã sử dụng</li>
+                                <li  data-aos="fade-left"><i class="fa fa-check" data-wow-delay="0.7s"></i>Ưu đãi giảm 50K khi đặt qua app lần đầu</li>
                             </ul>
-                            <a href="#" class="down-experience">Tải và trải nghiệm ứng dụng tại đây</a>
+                            <div>
+                                <a href="#" class="down-experience">Tải và trải nghiệm ứng dụng tại đây</a>
+                            </div>
                             <a href="#" class="donload-app"><img src="img/download-app.png" alt="ảnh"></a>
                         </div>
                     </div>
@@ -179,46 +197,146 @@
 
             </section>
             <!--end section-app-->
-            <section class="section">
+            <section class="section-partner">
+                <div class="container">
+                    <div class="txt-sc text-center">Ý KIẾN KHÁCH HÀNG</div>
+                    <h3 class="title-section text-center">Khách Hàng Của Chúng Tôi Nói Gì ...</h3>
+                    <div class="row slick-partner">
+                        <div class="item-partner">
+                            <div class="row box-slide clearfix">
+                                <div class="col-md-2 box-img-partner">
+                                    <img src="img/avt-partner.jpg" alt="ảnh">
+                                </div>
 
+                                <div class=" col-md-3 block-name">
+                                    <h3 class="name-partner">Trần Thị Thắm</h3>
+                                    <div class="sub-partner">-- Trưởng phòng kỹ thuật --</div>
+                                </div>
+                                <div class="col-md-7 txt-partner">
+                                    <div class="qoute-left"><img src="img/icon-quote.svg" alt="ảnh"></div>
+                                    <div class="qoute-right"><img src="img/icon-quote.svg" alt="ảnh"></div>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item-partner">
+                            <div class="row box-slide clearfix">
+                                <div class="col-md-2 box-img-partner">
+                                    <img src="img/avt-partner.jpg" alt="ảnh">
+                                </div>
+
+                                <div class=" col-md-3 block-name">
+                                    <h3 class="name-partner">Trần Thị Thắm</h3>
+                                    <div class="sub-partner">-- Trưởng phòng kỹ thuật --</div>
+                                </div>
+                                <div class="col-md-7 txt-partner">
+                                    <div class="qoute-left"><img src="img/icon-quote.svg" alt="ảnh"></div>
+                                    <div class="qoute-right"><img src="img/icon-quote.svg" alt="ảnh"></div>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item-partner">
+                            <div class="row box-slide clearfix">
+                                <div class="col-md-2 box-img-partner">
+                                    <img src="img/avt-partner.jpg" alt="ảnh">
+                                </div>
+
+                                <div class=" col-md-3 block-name">
+                                    <h3 class="name-partner">Trần Thị Thắm</h3>
+                                    <div class="sub-partner">-- Trưởng phòng kỹ thuật --</div>
+                                </div>
+                                <div class="col-md-7 txt-partner">
+                                    <div class="qoute-left"><img src="img/icon-quote.svg" alt="ảnh"></div>
+                                    <div class="qoute-right"><img src="img/icon-quote.svg" alt="ảnh"></div>
+                                    <p>
+                                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </section>
         </main>
-<!--        <footer class="footer">-->
-<!--            <div class="container">-->
-<!--                <div class="col-md-4">-->
-<!--                    <div class="logo-foot"><a href="#"><img src="img/Logo.svg" alt="ảnh"></a></div>-->
-<!--                    <div class="sub-foot">Sed vitae diam. Suspendisse vel justo mattis magna vestibulum molestie. Ut Nulla facilis In hac habitasse platea dictumst. Aliquam tincidunt aliquet nunc. Ut tincidunt magna in eros. Vivamus a metus.</div>-->
-<!--                </div>-->
-<!--                <div class="col-md-8">-->
-<!--                    <div class="row">-->
-<!--                        <div class="col-md-4">-->
-<!--                            <h4 class="title-foot">dịch vụ</h4>-->
-<!--                            <ul class="list-foot">-->
-<!--                                <li><a href="#">Gia đình</a></li>-->
-<!--                                <li><a href="#">Văn phòng</a></li>-->
-<!--                                <li><a href="#">Điện nước</a></li>-->
-<!--                                <li><a href="#">Dịch vụ khác</a></li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-4">-->
-<!--                            <h4 class="title-foot">hỗ trợ khách hàng</h4>-->
-<!--                            <ul class="list-foot">-->
-<!--                                <li><a href="#">Câu hỏi thường gặp</a></li>-->
-<!--                                <li><a href="#">Chính sách bảo mật</a></li>-->
-<!--                                <li><a href="#">Điều khoản</a></li>-->
-<!--                                <li><a href="#">Liên hệ</a></li>-->
-<!--                            </ul>-->
-<!--                        </div>-->
-<!--                        <div class="col-md-4">-->
-<!--                            <h4 class="title-foot">mạng xã hội</h4>-->
-<!--                            <div class="icon-fb">a><img src="img/icon-fb.svg" alt="ảnh"></div>-->
-<!--                            <div class="icon-fb">a><img src="img/icon-yt.svg" alt="ảnh"></div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="copy-right">Copyright © 2013-2019 Dichvubonmua Company. All rights reserved.</div>-->
-<!--            </div>-->
-<!--        </footer>-->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="logo-foot"><a href="#"><img src="img/logo-footer.svg" alt="ảnh"></a></div>
+                        <div class="sub-foot">Sed vitae diam. Suspendisse vel justo mattis magna vestibulum molestie. Ut Nulla facilis In hac habitasse platea dictumst. Aliquam tincidunt aliquet nunc. Ut tincidunt magna in eros. Vivamus a metus.</div>
+                    </div>
+                    <div class="col-md-1"></div>
+                    <div class="col-md-7">
+                        <div class="row foot-right">
+                            <div class="col-md-4">
+                                <h4 class="title-foot">dịch vụ</h4>
+                                <ul class="list-foot">
+                                    <li><a href="#">Gia đình</a></li>
+                                    <li><a href="#">Văn phòng</a></li>
+                                    <li><a href="#">Điện nước</a></li>
+                                    <li><a href="#">Dịch vụ khác</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h4 class="title-foot">hỗ trợ khách hàng</h4>
+                                <ul class="list-foot">
+                                    <li><a href="#">Câu hỏi thường gặp</a></li>
+                                    <li><a href="#">Chính sách bảo mật</a></li>
+                                    <li><a href="#">Điều khoản</a></li>
+                                    <li><a href="#">Liên hệ</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <h4 class="title-foot">mạng xã hội</h4>
+                                <a href="#" class="icon-fb"><img src="img/icon-fb.svg" alt="ảnh"></a>
+                                <a href="#" class="icon-yt"><img src="img/icon-yt.svg" alt="ảnh"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="copy-right text-center">Copyright © 2013-2019 Dichvubonmua Company. All rights reserved.</div>
+            </div>
+        </footer>
+        <a href="#top" id="go_top" class="btn-scrolltop" style="display: inline;"><i class="fa fa-angle-up"></i></a>
     </div>
+    <script type="text/javascript" src="libs/js/slick.js"></script>
+    <script>AOS.init();</script>
+    <script>
+        $('.slick-partner').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            arrows: true,
+            responsive: [{
+                breakpoint: 600,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1
+                }
+            },
+                {
+                    breakpoint: 400,
+                    settings: {
+                        arrows: false,
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }]
+        });
+    </script>
 </body>
 </html>
