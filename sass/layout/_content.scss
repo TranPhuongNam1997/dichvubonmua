@@ -318,9 +318,13 @@ section.about-us{
   .item-pro{
     padding: 21px 0;
     border-top: 1px dashed #DADADA;
-    &:last-child{
-      border-bottom: none;
-    }
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 15px;
+
+
     .item-services{
       color: #4D4D4D;
       font-weight: 500;
@@ -330,4 +334,15 @@ section.about-us{
       color: #F89F17;
     }
   }
+}
+.mg-15{
+  margin: 0 -15px;
+}
+.br-top-none{
+  &:first-child,&:nth-child(2){
+    item-pro{
+      border-top: none;
+    }
+  }
+
 }

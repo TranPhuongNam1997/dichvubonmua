@@ -800,15 +800,24 @@ section.about-us {
   padding: 3px 32px; }
   .block-price .item-pro {
     padding: 21px 0;
-    border-top: 1px dashed #DADADA; }
-    .block-price .item-pro:last-child {
-      border-bottom: none; }
+    border-top: 1px dashed #DADADA;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 15px; }
     .block-price .item-pro .item-services {
       color: #4D4D4D;
       font-weight: 500; }
     .block-price .item-pro .txt-price {
       font-weight: 500;
       color: #F89F17; }
+
+.mg-15 {
+  margin: 0 -15px; }
+
+.br-top-none:first-child item-pro, .br-top-none:nth-child(2) item-pro {
+  border-top: none; }
 
 footer {
   background: #1D262D; }
