@@ -927,6 +927,8 @@ section.about-us {
     color: #333333;
     margin-bottom: 9px;
     display: block; }
+    .item-info label span {
+      color: red; }
   .item-info input, .item-info select, .item-info textarea {
     border: 1px solid #898989;
     border-radius: 5px;
@@ -957,6 +959,51 @@ section.about-us {
 
 .fix-252 {
   height: 252px; }
+
+.section-question {
+  padding: 113px 0 80px; }
+
+.title-question {
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 19px; }
+
+.list-question > li {
+  border-bottom: 1px solid #C4C4C4; }
+  .list-question > li:last-child {
+    border-bottom: none; }
+  .list-question > li > a {
+    font-size: 16px;
+    line-height: 30px;
+    padding: 15px 30px 15px 0;
+    display: block;
+    transition: all 0.3s;
+    font-weight: 500;
+    position: relative; }
+    .list-question > li > a i {
+      position: absolute;
+      right: 5px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 23px;
+      transition: all 0.3s; }
+    .list-question > li > a:hover {
+      color: #349A1B;
+      transition: all 0.3s; }
+      .list-question > li > a:hover i {
+        color: #349A1B; }
+  .list-question > li ul li p {
+    line-height: 30px;
+    margin-bottom: 13px; }
+    .list-question > li ul li p:last-child {
+      margin-bottom: 27px; }
+  .list-question > li.rotate-up > a {
+    color: #349A1B;
+    transition: all 0.3s; }
+    .list-question > li.rotate-up > a i {
+      color: #349A1B;
+      transform: translateY(-50%) rotate(180deg);
+      transition: all 0.3s; }
 
 footer {
   background: #1D262D; }

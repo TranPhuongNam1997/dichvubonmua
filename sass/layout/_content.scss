@@ -485,6 +485,9 @@ section.about-us{
     color: #333333;
     margin-bottom: 9px;
     display: block;
+    span{
+      color: red;
+    }
   }
   input,select,textarea{
     border: 1px solid #898989;
@@ -523,4 +526,68 @@ section.about-us{
 }
 .fix-252{
   height: 252px;
+}
+
+.section-question{
+  padding: 113px 0 80px;
+}
+.title-question{
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 19px;
+}
+.list-question{
+  >li{
+    border-bottom: 1px solid #C4C4C4;
+    &:last-child{
+      border-bottom: none;
+    }
+    >a{
+      font-size: 16px;
+      line-height: 30px;
+      padding: 15px 30px 15px 0;
+      display: block;
+      transition: all 0.3s;
+      font-weight: 500;
+      position: relative;
+      i{
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 23px;
+        transition: all 0.3s
+      }
+      &:hover{
+        color: #349A1B;
+        transition: all 0.3s;
+        i{
+          color: #349A1B;
+        }
+      }
+
+    }
+    ul{
+      li{
+        p{
+          line-height: 30px;
+          margin-bottom: 13px;
+          &:last-child{
+            margin-bottom: 27px;
+          }
+        }
+      }
+    }
+    &.rotate-up{
+      >a{
+        color: #349A1B;
+        transition: all 0.3s;
+        i{
+          color: #349A1B;
+          transform: translateY(-50%) rotate(180deg);
+          transition: all 0.3s;
+        }
+      }
+    }
+  }
 }

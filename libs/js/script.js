@@ -151,6 +151,19 @@ $(document).ready(function () {
         $('.navigation').toggleClass('show');
     });
 
+    //js question
+
+    $(".list-question ul").hide();
+    $('.list-question > li').click(function () {
+        $(".list-question ul").slideUp();
+        $('.list-question > li').removeClass('rotate-up');
+        if(!$(this).children('.list-question ul').is(":visible"))
+        {
+            $(this).children('.list-question ul').slideDown();
+            $(this).addClass('rotate-up');
+        }
+    });
+
     //js select
 
     // $('.field-select').click(function () {
