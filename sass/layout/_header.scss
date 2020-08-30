@@ -71,6 +71,11 @@
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.14);
     transition: all 0.3s;
   }
+  &.fixed-page-child{
+    background: #fff;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.14);
+    transition: all 0.3s;
+  }
 }
 #wrapper{
   position: relative;

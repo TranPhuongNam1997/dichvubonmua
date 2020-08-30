@@ -434,6 +434,10 @@ body {
     background: #fff;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.14);
     transition: all 0.3s; }
+  .head-top.fixed-page-child {
+    background: #fff;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.14);
+    transition: all 0.3s; }
 
 #wrapper {
   position: relative; }
@@ -741,6 +745,70 @@ section.about-us {
   content: '';
   border: 1px solid #3a9c19;
   padding: 2px; }
+
+.banner-services {
+  padding-top: 85px; }
+
+.section-detail-services {
+  padding: 100px 0 50px; }
+
+.title-page-child {
+  font-size: 32px;
+  line-height: 44px;
+  padding-bottom: 27px;
+  position: relative;
+  margin-bottom: 30px; }
+  .title-page-child:after {
+    content: '';
+    width: 85px;
+    height: 5px;
+    background: #349A1B;
+    border-radius: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0; }
+
+.box-services {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(165, 165, 165, 0.25);
+  border-radius: 5px;
+  padding: 47px 29px; }
+  .box-services .sub-services {
+    font-size: 14px;
+    line-height: 20px;
+    color: #898989;
+    text-align: center; }
+
+.title-services {
+  font-size: 22px;
+  line-height: 27px;
+  color: #349A1B;
+  margin-bottom: 30px; }
+
+.main-page-child {
+  background: #F8F8F8; }
+
+.section-price {
+  padding: 50px 0; }
+  .section-price .title-page-child {
+    margin-bottom: 36px; }
+
+.block-price {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(165, 165, 165, 0.25);
+  border-radius: 5px;
+  padding: 3px 32px; }
+  .block-price .item-pro {
+    padding: 21px 0;
+    border-top: 1px dashed #DADADA; }
+    .block-price .item-pro:last-child {
+      border-bottom: none; }
+    .block-price .item-pro .item-services {
+      color: #4D4D4D;
+      font-weight: 500; }
+    .block-price .item-pro .txt-price {
+      font-weight: 500;
+      color: #F89F17; }
 
 footer {
   background: #1D262D; }
