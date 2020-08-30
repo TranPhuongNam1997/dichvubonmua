@@ -5,3 +5,84 @@
 button[data-ripple]{
   position: relative;
 }
+.btn-call-mechanic{
+  background-image: linear-gradient(to right, #349A1B 0%, #8EBD00 51%, #349A1B 100%);
+  padding: 11px 24px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  transition: all 0.5s;
+  position: relative;
+  background-size: 200% auto;
+  box-shadow: 0px 5px 20px rgba(26, 93, 9, 0.25);
+  &:hover{
+    background-position: 100% center;
+  }
+}
+.btn-login{
+  border: 1px solid #349A1B;
+  box-sizing: border-box;
+  box-shadow: 0px 5px 20px rgba(141, 146, 139, 0.25);
+  border-radius: 100px;
+  background: #fff;
+  padding: 11px 24px;
+  margin-left: 11px;
+  color: #349A1B;
+  transition: all 0.3s;
+  &:hover{
+    background: #349A1B;
+    color: #fff;
+    transition: all 0.3s;
+  }
+}
+.btn-callnow{
+  background-image: linear-gradient(to right, #349A1B 0%, #8EBD00 51%, #349A1B 100%);
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  transition: all 0.5s;
+  position: relative;
+  background-size: 200% auto;
+  box-shadow: 0px 5px 20px rgba(26, 93, 9, 0.25);
+  &:hover{
+    background-position: 100% center;
+  }
+}
+.btn-research-more{
+  background-image: linear-gradient(to right, #F09811 0%, #F2BB2C 51%, #F09811 100%);
+  padding: 15px 31px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  transition: all 0.5s;
+  position: relative;
+  background-size: 200% auto;
+  box-shadow: 0px 5px 20px rgba(26, 93, 9, 0.25);
+  margin-left: 11px;
+  &:hover{
+    background-position: 100% center;
+  }
+}
+.btn-contact{
+  background-image: linear-gradient(to right, #349A1B 0%, #8EBD00 51%, #349A1B 100%);
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 16px;
+  color: #fff;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  transition: all 0.5s;
+  position: relative;
+  background-size: 200% auto;
+  box-shadow: 0px 5px 20px rgba(26, 93, 9, 0.25);
+  &:hover{
+    background-position: 100% center;
+  }
+}

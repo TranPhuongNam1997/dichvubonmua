@@ -23,38 +23,43 @@
 
 </head>
 <body>
-    <div id="wapper">
+    <div id="wrapper">
         <header class="header">
-            <div class="container">
-                <div class="logo">
-                    <h1><a href=""><img src="img/Logo.svg" alt="ảnh"></a></h1>
-                </div>
-                <div class="head-right">
-                    <nav class="navigation">
-                        <ul class="menu">
-                            <li><a href="#">Trang chủ</a></li>
-                            <li><a href="#">Các dịch vụ</a></li>
-                            <li><a href="#">Tin tức</a></li>
-                            <li><a href="#">Chính sách pháp lý</a></li>
-                        </ul>
-                    </nav>
-                    <button class="btn-call-mechanic">Gọi thợ</button>
-                    <button class="btn-login">Đăng nhập</button>
+            <div class="head-top">
+                <div class="container clearfix">
+                    <div class="logo">
+                        <h1><a href=""><img src="img/Logo.svg" alt="ảnh"></a></h1>
+                    </div>
+                    <div class="head-right clearfix">
+                        <nav class="navigation">
+                            <ul class="menu clearfix">
+                                <li><a href="#">Trang chủ</a></li>
+                                <li><a href="#">Các dịch vụ<i class="fas fa-angle-down"></i></a></li>
+                                <li><a href="#">Tin tức</a></li>
+                                <li><a href="#">Chính sách pháp lý<i class="fas fa-angle-down"></a></i></li>
+                            </ul>
+                        </nav>
+                        <div class="btn-blockx">
+                            <button class="btn-call-mechanic">Gọi thợ</button>
+                            <button class="btn-login">Đăng nhập</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
+
             <div>
                 <div class="banner-left"><img src="img/banner-left.svg" alt="ảnh"></div>
-                <div class="banner-right"><img src="img/banner-left.svg" alt="ảnh"></div>
-                <div class="banner-bottom"><img src="img/banner-left.svg" alt="ảnh"></div>
-                <div class="banner-top"><img src="img/banner-left.svg" alt="ảnh"></div>
+                <div class="banner-right"><img src="img/banner-right.svg" alt="ảnh"></div>
+                <div class="banner-bottom"><img src="img/banner-bot.svg" alt="ảnh"></div>
+                <div class="banner-top"><img src="img/banner-top.svg" alt="ảnh"></div>
             </div>
             <div class="sub-banner">
                 <h2 class="slogan">Chúng Tôi Làm Việc. Bạn Thư giãn</h2>
-                <div>Nhân Viên Tiêu Chuẩn - Cam Kết Chất Lượng</div>
-                <div>
-                    <button class="btn-callnow"></button>
-                    <button class="btn-rearch-more">Tìm hiểu thêm</button>
+                <div class="sub-slogan">Nhân Viên Tiêu Chuẩn - Cam Kết Chất Lượng</div>
+                <div class="btn-sub">
+                    <button class="btn-callnow">Gọi Thợ Ngay</button>
+                    <button class="btn-research-more">Tìm Hiểu Thêm</button>
                 </div>
             </div>
         </header>
@@ -101,10 +106,10 @@
             <!--end section-ads-->
             <section class="section-procedure">
                 <div class="container">
-                    <div class="txt-sc">quy trình</div>
-                    <h3 class="title-section">Quy Trình Đặt Dịch Vụ</h3>
-                    <div class="row">
-                        <div class="col-6 push-2 pull-2">
+                    <div class="txt-sc text-center">quy trình</div>
+                    <h3 class="title-section text-center">Quy Trình Đặt Dịch Vụ</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-8">
                             <ul class="list-procedure">
                                 <li>
                                     <div class="number-order">1</div>
@@ -152,63 +157,68 @@
             </section>
             <!--end section-procedure-->
             <section class="section-app">
-                <div class="col-md-4">
-                    <img src="img/img-iphone.png" alt="ảnh">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img src="img/iphone.svg" class="icon-phone" alt="ảnh">
+                        </div>
+                        <div class="col-md-7">
+                            <div class="title-app">Ứng dụng <span>Dịch Vụ Bốn Mùa</span> tiện lợi</div>
+                            <ul class="list-utilies">
+                                <li><i class="fa fa-check"></i>Đặt dịch vụ chỉ với vài bước đơn giản</li>
+                                <li><i class="fa fa-check"></i>Có thông tin Người giúp việc sẽ đến làm tại nhà</li>
+                                <li><i class="fa fa-check"></i>Quản lý thời gian, đánh giá chất lượng</li>
+                                <li><i class="fa fa-check"></i>Quản lý lịch sử, số tiền đã sử dụng</li>
+                                <li><i class="fa fa-check"></i>Ưu đãi giảm 50K khi đặt qua app lần đầu</li>
+                            </ul>
+                            <a href="#" class="down-experience">Tải và trải nghiệm ứng dụng tại đây</a>
+                            <a href="#" class="donload-app"><img src="img/download-app.png" alt="ảnh"></a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-8">
-                    <div class="title-app">Ứng dụng <span>Dịch Vụ</span> Bốn Mùa tiện lợi</div>
-                    <ul class="list-utilies">
-                        <li><i class="fa fa-check"></i>Đặt dịch vụ chỉ với vài bước đơn giản</li>
-                        <li><i class="fa fa-check"></i>Có thông tin Người giúp việc sẽ đến làm tại nhà</li>
-                        <li><i class="fa fa-check"></i>Quản lý thời gian, đánh giá chất lượng</li>
-                        <li><i class="fa fa-check"></i>Quản lý lịch sử, số tiền đã sử dụng</li>
-                        <li><i class="fa fa-check"></i>Ưu đãi giảm 50K khi đặt qua app lần đầu</li>
-                    </ul>
-                    <a href="#" class="down-experience">Tải và trải nghiệm ứng dụng tại đây</a>
-                    <a href="#" class="donload-app"><img src="img/download-app.png" alt="ảnh"></a>
-                </div>
+
             </section>
             <!--end section-app-->
             <section class="section">
 
             </section>
         </main>
-        <footer class="footer">
-            <div class="container">
-                <div class="col-md-4">
-                    <div class="logo-foot"><a href="#"><img src="img/Logo.svg" alt="ảnh"></a></div>
-                    <div class="sub-foot">Sed vitae diam. Suspendisse vel justo mattis magna vestibulum molestie. Ut Nulla facilis In hac habitasse platea dictumst. Aliquam tincidunt aliquet nunc. Ut tincidunt magna in eros. Vivamus a metus.</div>
-                </div>
-                <div class="col-md-8">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <h4 class="title-foot">dịch vụ</h4>
-                            <ul class="list-foot">
-                                <li><a href="#">Gia đình</a></li>
-                                <li><a href="#">Văn phòng</a></li>
-                                <li><a href="#">Điện nước</a></li>
-                                <li><a href="#">Dịch vụ khác</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <h4 class="title-foot">hỗ trợ khách hàng</h4>
-                            <ul class="list-foot">
-                                <li><a href="#">Câu hỏi thường gặp</a></li>
-                                <li><a href="#">Chính sách bảo mật</a></li>
-                                <li><a href="#">Điều khoản</a></li>
-                                <li><a href="#">Liên hệ</a></li>
-                            </ul>
-                        </div>
-                        <div class="col-md-4">
-                            <h4 class="title-foot">mạng xã hội</h4>
-                            <div class="icon-fb">a><img src="img/icon-fb.svg" alt="ảnh"></div>
-                            <div class="icon-fb">a><img src="img/icon-yt.svg" alt="ảnh"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="copy-right">Copyright © 2013-2019 Dichvubonmua Company. All rights reserved.</div>
-            </div>
-        </footer>
+<!--        <footer class="footer">-->
+<!--            <div class="container">-->
+<!--                <div class="col-md-4">-->
+<!--                    <div class="logo-foot"><a href="#"><img src="img/Logo.svg" alt="ảnh"></a></div>-->
+<!--                    <div class="sub-foot">Sed vitae diam. Suspendisse vel justo mattis magna vestibulum molestie. Ut Nulla facilis In hac habitasse platea dictumst. Aliquam tincidunt aliquet nunc. Ut tincidunt magna in eros. Vivamus a metus.</div>-->
+<!--                </div>-->
+<!--                <div class="col-md-8">-->
+<!--                    <div class="row">-->
+<!--                        <div class="col-md-4">-->
+<!--                            <h4 class="title-foot">dịch vụ</h4>-->
+<!--                            <ul class="list-foot">-->
+<!--                                <li><a href="#">Gia đình</a></li>-->
+<!--                                <li><a href="#">Văn phòng</a></li>-->
+<!--                                <li><a href="#">Điện nước</a></li>-->
+<!--                                <li><a href="#">Dịch vụ khác</a></li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-4">-->
+<!--                            <h4 class="title-foot">hỗ trợ khách hàng</h4>-->
+<!--                            <ul class="list-foot">-->
+<!--                                <li><a href="#">Câu hỏi thường gặp</a></li>-->
+<!--                                <li><a href="#">Chính sách bảo mật</a></li>-->
+<!--                                <li><a href="#">Điều khoản</a></li>-->
+<!--                                <li><a href="#">Liên hệ</a></li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+<!--                        <div class="col-md-4">-->
+<!--                            <h4 class="title-foot">mạng xã hội</h4>-->
+<!--                            <div class="icon-fb">a><img src="img/icon-fb.svg" alt="ảnh"></div>-->
+<!--                            <div class="icon-fb">a><img src="img/icon-yt.svg" alt="ảnh"></div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--                <div class="copy-right">Copyright © 2013-2019 Dichvubonmua Company. All rights reserved.</div>-->
+<!--            </div>-->
+<!--        </footer>-->
     </div>
 </body>
 </html>

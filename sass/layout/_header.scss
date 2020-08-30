@@ -48,4 +48,76 @@
   }
 }
 
+.logo{
+  float: left;
+  padding: 22px 0;
+  h1{
+    margin-bottom: 0;
+    a{
 
+    }
+  }
+}
+.head-top{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;
+}
+#wrapper{
+  position: relative;
+}
+header{
+  height: 783px;
+  background: url("../img/banner.png") no-repeat center center;
+  background-size: contain;
+  position: relative;
+}
+.banner-left,.banner-bottom,.banner-right,.banner-top{
+  position: absolute;
+  top: 29%;
+  left: 11%;
+}
+.banner-left{
+  top: auto;
+  bottom: 2%;
+  left: 9%;
+}
+.banner-bottom{
+  top: auto;
+  left: 40%;
+  bottom: 2%;
+}
+.banner-right{
+  top: auto;
+  left: auto;
+  bottom: 5%;
+  right: 23%;
+}
+.banner-top{
+  top: 0;
+  left: auto;
+  right: 15%;
+}
+.sub-banner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  .slogan{
+    font-size: 48px;
+    line-height: 44px;
+    margin-bottom: 24px;
+  }
+  .sub-slogan{
+    font-size: 22px;
+    line-height: 27px;
+    color: #4A4A4A;
+    margin-bottom: 33px;
+  }
+  .btn-sub{
+
+  }
+}

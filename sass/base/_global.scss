@@ -10,11 +10,10 @@ body{
   margin: 0;
   padding: 0;
   background: #fff;
-  color: #000;
+  color: #202020;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 17px;
   font-family: "SVN-Gotham Rounded";
-  //font-weight: 500;
 
 }
 .body-wrap{
@@ -26,25 +25,6 @@ body{
 }
 html, body {
   height: 100%;
-}
-.wrapper {
-  //min-height: 100%;
-  //height: auto;
-  //margin: 0 auto -147px;
-  //background: #D3D8DD;
-  //overflow: hidden;
-  //position: relative;
-  //max-width: 1920px;
-  //width: 100%;
-}
-.main{
-  //padding-top: 76px;
-  //@include tablet{
-  //  padding-top: 66px;
-  //}
-  //@include mobile-horizontal{
-  //  padding-top: 86px;
-  //}
 }
 .push{
   height: 147px;

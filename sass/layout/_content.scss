@@ -2,3 +2,171 @@
 // Layout :: Content
 // ======================================================
 
+section.about-us{
+  background: #F8F8F8;
+  padding: 132px 0 102px;
+}
+.txt-sc{
+  color: #349A1B;
+  margin-bottom: 16px;
+  text-transform: uppercase;
+}
+.title-section{
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 13px;
+}
+.sub-title{
+  font-size: 18px;
+  line-height: 26px;
+  color: #4A4A4A;
+  margin-bottom: 44px;
+}
+.sub-title-bottom{
+  font-size: 14px;
+  line-height: 20px;
+  color: #4A4A4A;
+  margin-bottom: 57px;
+}
+.list-services{
+  li{
+    width: 250px;
+    height: 221px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(213, 219, 222, 0.3);
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 30px;
+    margin-right: 29px;
+    float: left;
+    img{
+      display: block;
+    }
+    .txt-services{
+      font-size: 18px;
+      line-height: 20px;
+      text-align: center;
+    }
+    &:nth-child(1){
+      img{
+        margin: 20px auto 16px;
+      }
+    }
+    &:nth-child(2){
+      margin-right: 0;
+      margin-top: -30px;
+      img{
+        margin: 23px auto 15px;
+      }
+    }
+    &:nth-child(3){
+      img{
+        margin: 24px auto 15px;
+      }
+    }
+    &:nth-child(4){
+      margin-right: 0;
+      margin-top: -30px;
+      img{
+        margin: 23px auto 15px;
+      }
+    }
+  }
+}
+.section-procedure{
+  padding: 100px 0;
+  background: url("../img/produce.png") no-repeat;
+  background-position: 100% 100%;
+  background-size: contain;
+  .title-section{
+    margin-bottom: 49px;
+  }
+
+}
+.list-procedure{
+  li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    .number-order{
+      font-size: 24px;
+      width: 50px;
+      height: 50px;
+      background: #349A1B;
+      color: #fff;
+      border-radius: 50%;
+      display: block;
+      margin-right: 28px;
+      text-align: center;
+      line-height: 50px;
+    }
+    .block-step{
+      background: #F8F8F8;
+      border-radius: 3px;
+      padding: 29px 23px 18px;
+      width: 652px;
+
+      .name-step{
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 4px;
+      }
+      .sub-step{
+        font-size: 14px;
+        line-height: 20px;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        white-space: normal;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 2;
+        display: -webkit-box;
+        margin-bottom: 7px;
+      }
+    }
+  }
+}
+
+.section-app{
+  padding: 130px 0;
+  background: #F8F8F8;
+}
+.title-app{
+  font-size: 32px;
+  line-height: 40px;
+  margin-bottom: 35px;
+  span{
+    color: #349A1B;
+  }
+}
+.list-utilies{
+  li{
+    font-size: 16px;
+    line-height: 30px;
+    margin-bottom: 42px;
+    i{
+      color: #349A1B;
+      margin-right: 24px;
+    }
+    &:last-child{
+      margin-bottom: 58px;
+    }
+  }
+}
+.down-experience{
+  display: block;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 25px;
+  color: #349A1B;
+  &:hover{
+    text-decoration: underline;
+    color: #349A1B;
+  }
+}
+.icon-phone{
+  float: right;
+  padding-right: 60px;
+}
