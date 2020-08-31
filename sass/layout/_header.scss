@@ -54,7 +54,9 @@
   h1{
     margin-bottom: 0;
     a{
-
+      img{
+        width: 204px;
+      }
     }
   }
 }
@@ -81,9 +83,9 @@
   position: relative;
 }
 header{
-  height: 783px;
-  background: url("../img/banner.png") no-repeat center center;
-  background-size: contain;
+  //height: 783px;
+  //background: url("../img/banner.png") no-repeat center center;
+  //background-size: contain;
   position: relative;
   overflow: hidden;
 }

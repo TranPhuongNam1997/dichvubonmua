@@ -421,6 +421,8 @@ body {
   padding: 15px 0; }
   .logo h1 {
     margin-bottom: 0; }
+    .logo h1 a img {
+      width: 204px; }
 
 .head-top {
   position: fixed;
@@ -443,9 +445,6 @@ body {
   position: relative; }
 
 header {
-  height: 783px;
-  background: url("../img/banner.png") no-repeat center center;
-  background-size: contain;
   position: relative;
   overflow: hidden; }
 
@@ -958,7 +957,8 @@ section.about-us {
     width: calc(100% - 50px); }
 
 .fix-252 {
-  height: 252px; }
+  height: 252px;
+  background: #fff; }
 
 .section-question {
   padding: 113px 0 80px; }
@@ -1013,6 +1013,8 @@ footer {
 .logo-foot {
   margin-top: 47px;
   margin-bottom: 27px; }
+  .logo-foot a img {
+    width: 204px; }
 
 .title-foot {
   font-size: 16px;
