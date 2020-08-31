@@ -21,9 +21,12 @@
 // });
 //
 // //menubar
-// var overlay = $("<div class='overlay'></div>")
-// $("body").prepend(overlay);
-//
+$(document).ready(function () {
+    var overlay = $("<div class='overlay'></div>")
+    $("body").prepend(overlay);
+});
+
+
 // $(".view-menu-mb").click(function () {
 //     $(this).toggleClass("change-icon-mb")
 //     overlay.toggle();

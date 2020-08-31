@@ -19,6 +19,9 @@ button[data-ripple]{
   &:hover{
     background-position: 100% center;
   }
+  @include tablet{
+    padding: 9px 24px;
+  }
 }
 .btn-login{
   border: 1px solid #349A1B;
@@ -34,6 +37,9 @@ button[data-ripple]{
     background: #349A1B;
     color: #fff;
     transition: all 0.3s;
+  }
+  @include tablet{
+    padding: 8px 12px;
   }
 }
 .btn-callnow{

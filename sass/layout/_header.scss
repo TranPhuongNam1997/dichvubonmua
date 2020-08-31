@@ -59,6 +59,21 @@
       }
     }
   }
+  @include tablet{
+    padding: 0;
+    position: absolute;
+    left: 50%;
+    top: -3px;
+    transform: translateX(-50%);
+    h1{
+      a{
+        img{
+          width: 165px;
+        }
+      }
+    }
+
+  }
 }
 .head-top{
   position: fixed;
@@ -77,6 +92,13 @@
     background: #fff;
     box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.14);
     transition: all 0.3s;
+  }
+  @include tablet{
+    position: fixed;
+    background: #fff;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.14);
+    transition: all 0.3s;
+    height: 51px;
   }
 }
 #wrapper{
@@ -98,22 +120,46 @@ header{
   top: auto;
   bottom: 2%;
   left: 4%;
+
+
+  @media (max-width: 1366px) {
+    img{
+      width: 70%;
+    }
+  }
 }
 .banner-bottom{
   top: auto;
   left: 33%;
   bottom: 2%;
+  @media (max-width: 1366px) {
+    img{
+      width: 70%;
+    }
+  }
 }
 .banner-right{
   top: auto;
   left: auto;
   bottom: 5%;
   right: 20%;
+  @media (max-width: 1366px) {
+    right: 13%;
+    img{
+      width: 70%;
+    }
+  }
 }
 .banner-top{
   top: 0;
   left: auto;
   right: 12%;
+  @media (max-width: 1366px) {
+    right: -2%;
+    img{
+      width: 70%;
+    }
+  }
 }
 .sub-banner{
   position: absolute;
@@ -125,6 +171,12 @@ header{
     font-size: 48px;
     line-height: 44px;
     margin-bottom: 24px;
+    @media (max-width: 1600px) {
+      font-size: 37px;
+    }
+    @include tablet-horizontal{
+      font-size: 28px;
+    }
   }
   .sub-slogan{
     font-size: 22px;
@@ -136,3 +188,72 @@ header{
 
   }
 }
+
+
+
+.menu-private{
+  display: none;
+  @include tablet{
+    display: block;
+    position: fixed;
+    left: 15px;
+    top: 17px;
+  }
+  button{
+    background: transparent;
+    border: none;
+    padding: 0;
+    outline: none;
+
+  }
+}
+.line-main{
+  background: #707070;
+  width: 18px;
+  height: 3px;
+  border-radius: 10px;
+  display: block;
+  margin-bottom: 3px;
+  pointer-events: none;
+  transition: all 0.3s;
+  &:last-child{
+    margin-bottom: 0;
+  }
+  @include lessdesktop{
+    width: 20px;
+    height: 3px;
+    margin-bottom: 4px;
+  }
+  @include desktop-small{
+    width: 20px;
+    height: 3px;
+    margin-bottom: 4px;
+  }
+}
+.change-icon-mb{
+  .line-1{
+    transform: translateY(9px) translateX(0) rotate(45deg);
+    transition: all 0.3s;
+    @include lessdesktop{
+      transform: translateY(8px) translateX(0) rotate(45deg);
+    }
+  }
+  .line-2{
+    opacity: 0;
+    transition: all 0.3s;
+  }
+  .line-3{
+    transform: translateY(-9px) translateX(0) rotate(-46deg);
+    transition: all 0.3s;
+    @include lessdesktop{
+      transform: translateY(-6px) translateX(0) rotate(-46deg);
+    }
+  }
+}
+
+//.overlay {
+//  background: #000;
+//  opacity: 0.5;
+//  z-index: 1;
+//  cursor: pointer;
+//}

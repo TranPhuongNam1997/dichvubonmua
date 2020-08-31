@@ -11,3 +11,6 @@
     padding: 0 15px;
   }
 }
+.slick-partner .slick-prev:before,.slick-partner .slick-next:before,.slick-partner .slick-prev,.slick-partner .slick-next{
+  display: none!important;
+}
