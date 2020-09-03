@@ -16,6 +16,13 @@ footer{
       width: 204px;
     }
   }
+  @include mobile-horizontal{
+    margin-top: 35px;
+  }
+  @include mobile{
+    margin-top: 25px;
+    text-align: center;
+  }
 }
 .title-foot{
   font-size: 16px;
@@ -23,6 +30,9 @@ footer{
   color: #DEDEDE;
   margin-bottom: 14px;
   text-transform: uppercase;
+  @include mobile{
+    text-align: center;
+  }
 }
 .list-foot{
   li{
@@ -36,9 +46,21 @@ footer{
       }
     }
   }
+  @include mobile-horizontal{
+    margin-bottom: 30px;
+  }
+  @include mobile{
+    text-align: center;
+  }
 }
 .foot-right{
   margin-top: 87px;
+  @include tablet{
+    margin-top: 50px;
+  }
+  @include mobile-horizontal{
+    margin-top: 35px;
+  }
 }
 .icon-fb,.icon-yt{
   display: inline-block;
@@ -51,6 +73,12 @@ footer{
   border-top: 1px solid #424543;
   padding: 20px 0;
   color: #A5B8AD;
+  @include mobile-horizontal{
+    margin-top: 35px;
+  }
+  @include mobile{
+    margin-top: 25px;
+  }
 }
 
 a.btn-scrolltop {
@@ -72,5 +100,10 @@ a.btn-scrolltop {
   &:hover{
     background: #44b11f;
     transition: all 0.3s;
+  }
+}
+.center-mb{
+  @include mobile{
+    text-align: center;
   }
 }

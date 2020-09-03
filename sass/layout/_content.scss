@@ -5,29 +5,61 @@
 section.about-us{
   background: #F8F8F8;
   padding: 132px 0 102px;
+  @include tablet{
+    padding: 50px 0 50px;
+  }
+  @include mobile-horizontal{
+     padding: 25px 0;
+   }
+  @include mobile{
+    padding: 20px 0;
+  }
 }
 .txt-sc{
   color: #349A1B;
   margin-bottom: 16px;
   text-transform: uppercase;
+  @include mobile{
+    margin-bottom: 10px;
+  }
 }
 .title-section{
   font-size: 32px;
   line-height: 40px;
   margin-bottom: 13px;
   font-weight: 500;
+  @include tablet{
+    font-size: 26px;
+  }
+
+  @include mobile-horizontal{
+    font-size: 22px;
+    line-height: 29px;
+  }
+  @include mobile{
+    font-size: 18px;
+  }
 }
 .sub-title{
   font-size: 18px;
   line-height: 26px;
   color: #4A4A4A;
   margin-bottom: 44px;
+  @include tablet{
+    margin-bottom: 15px;
+  }
 }
 .sub-title-bottom{
   font-size: 14px;
   line-height: 20px;
   color: #4A4A4A;
   margin-bottom: 57px;
+  @include tablet{
+    margin-bottom: 37px;
+  }
+  @include mobile-horizontal{
+    margin-bottom: 25px;
+  }
 }
 .list-services{
   li{
@@ -44,8 +76,27 @@ section.about-us{
       width: 200px;
       height: 186px;
     }
+    @include tablet{
+      width: 170px;
+      height: 170px;
+      margin-right: 7px;
+      margin-bottom: 10px;
+    }
+    @include mobile-horizontal{
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 15px;
+    }
+    @include mobile{
+      display: flex;
+      align-items: center;
+      height: auto;
+    }
     img{
       display: block;
+      @include mobile{
+        margin: 0;
+      }
     }
     .txt-services{
       font-size: 18px;
@@ -57,6 +108,9 @@ section.about-us{
         margin: 20px auto 16px;
         @include tablet-horizontal{
           width: 110px;
+        }
+        @include mobile{
+          margin: 15px;
         }
       }
     }
@@ -71,6 +125,9 @@ section.about-us{
         @include tablet-horizontal{
           width: 110px;
         }
+        @include mobile{
+          margin: 15px;
+        }
       }
     }
     &:nth-child(3){
@@ -78,6 +135,9 @@ section.about-us{
         margin: 24px auto 15px;
         @include tablet-horizontal{
           width: 110px;
+        }
+        @include mobile{
+          margin: 15px;
         }
       }
     }
@@ -92,6 +152,9 @@ section.about-us{
         @include tablet-horizontal{
           width: 110px;
         }
+        @include mobile{
+          margin: 15px;
+        }
       }
     }
   }
@@ -104,6 +167,22 @@ section.about-us{
   overflow: hidden;
   .title-section{
     margin-bottom: 49px;
+    @include mobile-horizontal{
+      margin-bottom: 30px;
+    }
+    @include mobile{
+      margin-bottom: 20px;
+    }
+  }
+  @include tablet{
+    padding: 50px 0;
+  }
+  @include mobile-horizontal{
+    padding: 25px 0;
+  }
+  @include mobile{
+    padding: 20px 0;
+    background: #fff;
   }
 
 }
@@ -126,17 +205,39 @@ section.about-us{
       margin-right: 28px;
       text-align: center;
       line-height: 50px;
+      @include mobile{
+        margin-right: 0;
+        margin-bottom: 15px;
+      }
     }
     .block-step{
       background: #F8F8F8;
       border-radius: 3px;
       padding: 29px 23px 18px;
       width: 652px;
-
+      @include tablet{
+        width: calc(100% - 78px);
+        padding: 15px 15px 15px;
+      }
+      @include mobile-horizontal{
+        padding: 15px 15px 15px;
+      }
+      @include mobile{
+        width: 100%;
+      }
       .name-step{
         font-size: 24px;
         line-height: 30px;
         margin-bottom: 4px;
+        @include tablet{
+          font-size: 20px;
+        }
+        @include mobile-horizontal{
+          font-size: 18px;
+        }
+        @include mobile{
+          font-size: 16px;
+        }
       }
       .sub-step{
         font-size: 14px;
@@ -150,6 +251,9 @@ section.about-us{
         margin-bottom: 7px;
       }
     }
+    @include mobile{
+      flex-direction: column;
+    }
   }
 }
 
@@ -157,6 +261,15 @@ section.about-us{
   padding: 130px 0;
   background: #F8F8F8;
   overflow: hidden;
+  @include tablet{
+    padding: 50px 0;
+  }
+  @include mobile-horizontal{
+    padding: 25px 0;
+  }
+  @include mobile{
+    padding: 20px 0;
+  }
 }
 .title-app{
   font-size: 32px;
@@ -165,6 +278,18 @@ section.about-us{
   font-weight: 500;
   span{
     color: #349A1B;
+  }
+  @include tablet{
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+  @include mobile-horizontal{
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  @include mobile{
+    line-height: 29px;
+    font-size: 18px;
   }
 }
 .list-utilies{
@@ -179,6 +304,31 @@ section.about-us{
     &:last-child{
       margin-bottom: 51px;
     }
+    @include tablet{
+      margin-bottom: 20px;
+      i{
+        float: left;
+        margin-top: 7px;
+      }
+      span{
+        width: calc(100% - 40px);
+        float: left;
+      }
+      &:after{
+        content: '';
+        clear: both;
+        display: table;
+      }
+      &:last-child{
+        margin-bottom: 30px;
+      }
+    }
+    @include mobile{
+      margin-bottom: 15px;
+      &:last-child{
+        margin-bottom: 25px;
+      }
+    }
   }
 }
 .down-experience{
@@ -191,10 +341,16 @@ section.about-us{
     text-decoration: underline;
     color: #349A1B;
   }
+  @include mobile-horizontal{
+    margin-bottom: 15px;
+  }
 }
 .icon-phone{
   float: right;
   padding-right: 60px;
+  @include tablet{
+    padding-right: 0;
+  }
 }
 
 
@@ -203,6 +359,22 @@ section.about-us{
   padding: 98px 0;
   .title-section{
     margin-bottom: 76px;
+    @include tablet{
+      margin-bottom: 30px;
+    }
+  }
+  @include tablet{
+    padding: 50px 0;
+  }
+  @include mobile-horizontal{
+    padding: 25px 0;
+  }
+  @include mobile{
+    padding: 20px 0;
+    img{
+      display: block;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -228,9 +400,24 @@ section.about-us{
   margin-top: 55px;
   .name-partner{
     font-size: 23px;
+    @include mobile-horizontal{
+      font-size: 20px;
+    }
+    @include mobile{
+      font-size: 16px;
+    }
+
+  }
+  @include mobile{
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
   .sub-partner {
     color: #a3a1a1;
+    @include mobile{
+      text-align: center;
+    }
   }
 }
 .txt-partner{
@@ -248,18 +435,27 @@ section.about-us{
     position: absolute;
     left: 0;
     bottom: 0;
+    @include mobile-horizontal{
+      left: 15px;
+    }
   }
   .qoute-right{
     position: absolute;
     right: 0;
     top: 0;
     transform: rotate(180deg);
+    @include mobile-horizontal{
+      right: 15px;
+    }
   }
 }
 
 .slick-partner{
   .slick-dots {
     bottom: -65px;
+    @include mobile-horizontal{
+      bottom: -31px;
+    }
   }
   .slick-dots li button:before {
     width: 10px;
@@ -281,9 +477,25 @@ section.about-us{
 }
 .banner-services{
   padding-top: 85px;
+  @include tablet{
+    padding-top: 53px;
+    img{
+      padding-top: 0;
+    }
+  }
 }
 .section-detail-services{
   padding: 100px 0 50px;
+  @include tablet{
+    padding: 50px 0;
+  }
+  @include mobile-horizontal{
+    padding: 25px 0;
+  }
+  @include mobile{
+    padding: 20px 0;
+
+  }
 }
 .title-page-child{
   font-size: 32px;
@@ -291,6 +503,17 @@ section.about-us{
   padding-bottom: 27px;
   position: relative;
   margin-bottom: 30px;
+  @include tablet{
+    font-size: 25px;
+    padding-bottom: 8px;
+    margin-bottom: 30px;
+  }
+  @include mobile-horizontal{
+    font-size: 22px;
+  }
+  @include mobile{
+    font-size: 18px;
+  }
   &:after{
     content: '';
     width: 85px;
@@ -313,6 +536,15 @@ section.about-us{
     color: #898989;
     text-align: center;
   }
+  @include tablet{
+    padding: 25px 15px;
+  }
+  @include mobile-horizontal{
+    margin-bottom: 30px;
+  }
+  @include mobile{
+    margin-bottom: 20px;
+  }
 }
 .title-services{
   font-size: 22px;
@@ -320,6 +552,16 @@ section.about-us{
   color: #349A1B;
   margin-bottom: 30px;
   text-align: center;
+  @include tablet{
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  @include mobile-horizontal{
+    font-size: 18px;
+  }
+  @include mobile{
+    font-size: 16px;
+  }
 }
 .main-page-child{
   background: #F8F8F8;
@@ -332,6 +574,17 @@ section.about-us{
   .title-page-child{
     margin-bottom: 36px;
   }
+  @include tablet{
+    padding: 50px 0;
+  }
+  @include mobile-horizontal{
+    padding: 25px 0;
+  }
+  @include mobile{
+    padding: 20px 0;
+
+  }
+
 }
 .block-price{
   background: #FFFFFF;
@@ -347,16 +600,24 @@ section.about-us{
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     margin: 0 15px;
-
+    @include mobile{
+      margin: 0;
+    }
 
     .item-services{
       color: #4D4D4D;
       font-weight: 500;
+      @include mobile-horizontal{
+        margin-bottom: 15px;
+      }
     }
     .txt-price{
       font-weight: 500;
       color: #F89F17;
     }
+  }
+  @include tablet{
+    padding: 3px 15px;
   }
 }
 .mg-15{
@@ -368,7 +629,13 @@ section.about-us{
       border-top: none;
     }
   }
-
+  @include mobile-horizontal{
+    &:nth-child(2){
+      .item-pro{
+        border-top: 1px dashed #dadada;
+      }
+    }
+  }
 }
 
 
@@ -379,6 +646,15 @@ section.about-us{
   background: #FFFFFF;
   border-radius: 3px;
   padding: 59px 32px;
+  @include tablet{
+    padding: 50px 15px;
+  }
+  @include mobile-horizontal{
+    padding: 25px 15px;
+  }
+  @include mobile{
+    padding: 20px 15px;
+  }
 }
 .rate-pp{
   display: flex;
@@ -391,6 +667,16 @@ section.about-us{
     line-height: 57px;
     margin-right: 17px;
     font-weight: 500;
+    @include tablet{
+      font-size: 55px;
+    }
+    @include mobile-horizontal{
+      font-size: 45px;
+    }
+  }
+  @include mobile-horizontal{
+    padding-bottom: 20px;
+    margin-bottom: 15px;
   }
 }
 .star-rate{
@@ -398,6 +684,12 @@ section.about-us{
     color: #C4C4C4;
     font-size: 34px;
     margin-right: 7px;
+    @include tablet{
+      font-size: 30px;
+    }
+    @include mobile-horizontal{
+      font-size: 25px;
+    }
   }
   .start-rated{
     color: #EDAE65;
@@ -418,6 +710,11 @@ section.about-us{
     i{
       font-size: 25px;
     }
+    @include mobile-horizontal{
+      i{
+        font-size: 20px;
+      }
+    }
   }
   .txt-your-rate{
     height: 102px;
@@ -432,6 +729,12 @@ section.about-us{
 .item-comment{
   border-bottom: 1px solid #DADADA;
   padding: 25px 0;
+  @include mobile-horizontal{
+    padding: 20px 0;
+  }
+  @include mobile{
+    padding: 15px 0;
+  }
   &:last-child{
     border-bottom: none;
   }
@@ -464,6 +767,15 @@ section.about-us{
 .fix-100{
   height: 100px;
   clear: both;
+  @include tablet{
+    height: 50px;
+  }
+  @include mobile-horizontal{
+    height: 25px;
+  }
+  @include mobile{
+    height: 20px;
+  }
 }
 
 .banner-services{
@@ -473,6 +785,9 @@ section.about-us{
     top: 85px;
     left: 0;
     width: 100%;
+    @include tablet{
+      top: 53px;
+    }
     ul{
       padding: 18px 0 56px;
       li{
@@ -481,6 +796,10 @@ section.about-us{
           font-size: 12px;
           line-height: 15px;
           color: #7a7a7a;
+          &:hover{
+            color: #349A1B;
+            text-decoration: underline;
+          }
 
         }
         i{
@@ -494,11 +813,29 @@ section.about-us{
 
 
 .box-call{
-  background: #FFFFFF;
-  box-shadow: 0px 0px 10px rgba(165, 165, 165, 0.25);
-  border-radius: 5px;
-  padding: 47px 29px;
+
+
+
+
   width: 682px;
+  position: absolute;
+  top: 176px;
+  left: calc((100% - 1140px)/2);
+  .block-call{
+    background: #FFFFFF;
+    padding: 47px 29px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(165, 165, 165, 0.25);
+    @include mobile-horizontal{
+      padding: 20px 15px;
+    }
+  }
+  @media (max-width: 1300px) {
+    position: unset;
+    margin-top: 50px;
+    width: 100%;
+    padding: 0 15px;
+  }
 }
 .item-info{
   margin-bottom: 20px;
@@ -546,19 +883,51 @@ section.about-us{
   .box-field{
     width: calc(100% - 50px);
   }
+  @include mobile-horizontal{
+    margin-bottom: 20px;
+  }
 }
 .fix-252{
   height: 252px;
   background: #fff;
+  @media (max-width: 1366px) {
+    height: 325px;
+  }
+  @media (max-width: 1300px) {
+
+    height: 50px;
+  }
+  @include mobile-horizontal{
+    height: 25px;
+  }
+  @include mobile{
+    height: 20px;
+  }
 }
 
 .section-question{
   padding: 113px 0 80px;
+  @include tablet{
+    padding: 50px 0;
+  }
+  @include mobile-horizontal{
+    padding: 25px 0;
+  }
+  @include mobile{
+    padding: 20px 0;
+  }
+
 }
 .title-question{
   font-size: 32px;
   line-height: 40px;
   margin-bottom: 19px;
+  @include tablet{
+    font-size: 26px;
+  }
+  @include mobile-horizontal{
+    font-size: 22px;
+  }
 }
 .list-question{
   >li{

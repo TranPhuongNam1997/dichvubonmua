@@ -81,7 +81,7 @@
   left: 0;
   width: 100%;
   background: transparent;
-  z-index: 9;
+  z-index: 999;
   transition: all 0.3s;
   &.fixed{
     background: #fff;
@@ -100,6 +100,21 @@
     transition: all 0.3s;
     height: 51px;
   }
+
+}
+header{
+  img{
+    @include tablet{
+      padding-top: 53px;
+    }
+  }
+  .logo{
+    img{
+      @include tablet{
+        padding-top: 0;
+      }
+    }
+  }
 }
 #wrapper{
   position: relative;
@@ -115,6 +130,9 @@ header{
   position: absolute;
   top: 29%;
   left: 11%;
+  @include mobile{
+    display: none;
+  }
 }
 .banner-left{
   top: auto;
@@ -127,6 +145,17 @@ header{
       width: 70%;
     }
   }
+  @include tablet{
+    left: 1%;
+    img{
+      width: 45%;
+    }
+  }
+  @include mobile-horizontal{
+    img{
+      width: 27%;
+    }
+  }
 }
 .banner-bottom{
   top: auto;
@@ -135,6 +164,16 @@ header{
   @media (max-width: 1366px) {
     img{
       width: 70%;
+    }
+  }
+  @include tablet{
+    img{
+      width: 45%;
+    }
+  }
+  @include mobile-horizontal{
+    img{
+      width: 27%;
     }
   }
 }
@@ -149,6 +188,18 @@ header{
       width: 70%;
     }
   }
+  @include tablet{
+    right: -10%;
+    img{
+      width: 45%;
+    }
+  }
+  @include mobile-horizontal{
+    right: -33%;
+    img{
+      width: 27%;
+    }
+  }
 }
 .banner-top{
   top: 0;
@@ -160,6 +211,18 @@ header{
       width: 70%;
     }
   }
+  @include tablet{
+    right: -11%;
+    img{
+      width: 45%;
+    }
+  }
+  @include mobile-horizontal{
+    right: -25%;
+    img{
+      width: 27%;
+    }
+  }
 }
 .sub-banner{
   position: absolute;
@@ -167,6 +230,12 @@ header{
   left: 50%;
   transform: translate(-50%,-50%);
   text-align: center;
+  @include tablet{
+    width: 100%;
+  }
+  @include mobile{
+    top: 63%;
+  }
   .slogan{
     font-size: 48px;
     line-height: 44px;
@@ -177,12 +246,24 @@ header{
     @include tablet-horizontal{
       font-size: 28px;
     }
+    @include tablet{
+      font-size: 22px;
+      margin-bottom: 10px;
+    }
+    @include mobile{
+      font-size: 18px;
+      line-height: 15px;
+    }
   }
   .sub-slogan{
     font-size: 22px;
     line-height: 27px;
     color: #4A4A4A;
     margin-bottom: 33px;
+    @include tablet{
+      font-size: 16px;
+      margin-bottom: 15px;
+    }
   }
   .btn-sub{
 

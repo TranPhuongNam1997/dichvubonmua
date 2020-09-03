@@ -13,93 +13,139 @@
     display: inline-block;
     @include tablet{
       position: fixed;
+      width: 300px;
       top: 52px;
       left: 0;
       height: 100%;
+      left: -300px;
+      transition: all 0.3s;
+      &.open-mb{
+        left: 0;
+        transition: all 0.3s;
+      }
+    }
+    @include mobile{
+      width: 100%;
+      left: -100%;
+    }
+
+    .has-dropdown{
+      .dropdown-child{
+        width: 183px;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        left: 0;
+        top: 80px;
+        transition: all 0.3s;
+        //background: #349a1b;
+        border-radius: 10px;
+        overflow: hidden;
+
+        li{
+          display: block;
+          a{
+            background: #349a1b;
+            display: block;
+            color: #fff;
+            padding: 10px 14px;
+            &:hover{
+              background: rgba(52, 154, 27, 0.78);
+            }
+          }
+        }
+        @include tablet{
+          position: unset;
+          opacity: 1;
+          visibility: unset;
+          top: 0;
+          width: 100%;
+          border-radius: 0;
+          li{
+            a{
+              padding: 10px 15px 10px 35px;
+              background: #fff;
+              color: #202020;
+              &:hover{
+                background: #E5EBE4;
+              }
+            }
+          }
+        }
+      }
+      &:hover .dropdown-child{
+        top: 35px;
+        transition: all 0.3s;
+        opacity: 1;
+        visibility: visible;
+        @include tablet{
+          position: unset;
+          opacity: unset;
+          visibility: unset;
+          //top: 0;
+        }
+      }
+      >a{
+        display: inline-block!important;
+      }
+      i{
+        transition: all 0.3s;
+        @include tablet{
+          float: right;
+          margin-top: 17px;
+        }
+      }
+      &.rotate-up{
+        i{
+          transform: rotate(180deg);
+          transition: all 0.3s;
+        }
+      }
+      &:hover{
+        ul.dropdown-child{
+
+        }
+      }
     }
     .menu{
       >li{
         float: left;
         margin-right: 2px;
         position: relative;
+
+
+        border-radius: 100px;
+        @include tablet{
+          margin-right: 0;
+        }
         &:last-child{
           margin-right: 0;
         }
         >a{
           display: block;
-          padding: 9px 14px;
           background: transparent;
-          border-radius: 100px;
+          padding: 9px 14px;
           color: #202020;
-          i{
-            color: #202020;
-            margin-left: 6px;
-          }
+
+        }
+        i{
+          color: #202020;
+          margin-left: 0;
+          margin-right: 9px;
         }
         &:hover{
-          >a{
             background: #E5EBE4;
             color: #202020;
-          }
-        }
-        .dropdown-child{
-          width: 183px;
-          opacity: 0;
-          visibility: hidden;
-          position: absolute;
-          left: 0;
-          top: 80px;
-          transition: all 0.3s;
-          //background: #349a1b;
-          border-radius: 10px;
-          overflow: hidden;
-          li{
-            display: block;
-
-            a{
-              background: #349a1b;
-              display: block;
-              color: #fff;
-              padding: 10px 14px;
-              &:hover{
-                background: rgba(52, 154, 27, 0.78);
+            @include tablet{
+              background: none;
+              >a{
+                color: #349a1b;
               }
             }
-          }
-          @include tablet{
-            position: relative;
-            opacity: 1;
-            visibility: visible;
-            top: 0;
-            width: 100%;
-            border-radius: 0;
-            li{
-              a{
-                padding: 10px 15px 10px 35px;
-                background: #fff;
-                color: #202020;
-                &:hover{
-                  background: #E5EBE4;
-                }
-              }
-            }
-          }
-        }
-        &:hover .dropdown-child{
-          top: 35px;
-          transition: all 0.3s;
-          opacity: 1;
-          visibility: visible;
-          @include tablet{
-            position: relative;
-            opacity: 1;
-            visibility: visible;
-            top: 0;
-          }
         }
       }
       @include tablet{
-        width: 300px;
+        //width: 300px;
         background: #fff;
         box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.14);
         height: 100%;

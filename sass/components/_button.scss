@@ -57,6 +57,14 @@ button[data-ripple]{
   &:hover{
     background-position: 100% center;
   }
+  @include tablet{
+    padding: 10px 20px;
+  }
+  @include mobile{
+      padding: 7px 20px;
+      font-size: 14px;
+
+  }
 }
 .btn-research-more{
   background-image: linear-gradient(to right, #F09811 0%, #F2BB2C 51%, #F09811 100%);
@@ -74,6 +82,14 @@ button[data-ripple]{
   &:hover{
     background-position: 100% center;
   }
+  @include tablet{
+    padding: 10px 20px;
+  }
+  @include mobile{
+      padding: 7px 20px;
+      font-size: 14px;
+
+  }
 }
 .btn-contact{
   background-image: linear-gradient(to right, #349A1B 0%, #8EBD00 51%, #349A1B 100%);
@@ -90,9 +106,18 @@ button[data-ripple]{
   &:hover{
     background-position: 100% center;
   }
+  @include tablet{
+    padding: 10px 20px;
+  }
+  @include mobile-horizontal{
+    margin-bottom: 20px;
+  }
 }
 button.btn-call-mechanic.call-mechanic-child{
   width: 170px;
+  @include mobile-horizontal{
+    width: 140px;
+  }
 }
 .send-rate{
   border: 1px solid #349A1B;

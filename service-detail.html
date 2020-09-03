@@ -34,16 +34,51 @@
 <body>
 <div id="wrapper">
     <header class="header">
+<!--        <div class="head-top fixed-page-child">-->
+<!--            <div class="container clearfix">-->
+<!--                <div class="logo">-->
+<!--                    <h1><a href=""><img src="img/Logo.svg" alt="ảnh"></a></h1>-->
+<!--                </div>-->
+<!--                <div class="head-right clearfix">-->
+<!--                    <nav class="navigation">-->
+<!--                        <ul class="menu clearfix">-->
+<!--                            <li><a href="#">Trang chủ</a></li>-->
+<!--                            <li class="has-dropdown"><a href="#">Các dịch vụ<i class="fas fa-angle-down"></i></a>-->
+<!--                                <ul class="dropdown-child">-->
+<!--                                    <li><a href="#">Dịch vụ 1</a></li>-->
+<!--                                    <li><a href="#">Dịch vụ 2</a></li>-->
+<!--                                    <li><a href="#">Dịch vụ 3</a></li>-->
+<!--                                </ul>-->
+
+<!--                            </li>-->
+<!--                            <li><a href="#">Tin tức</a></li>-->
+<!--                            <li><a href="#">Chính sách pháp lý<i class="fas fa-angle-down"></i></a></li>-->
+<!--                        </ul>-->
+<!--                    </nav>-->
+<!--                    <div class="btn-blockx">-->
+<!--                        <button class="btn-call-mechanic" data-ripple>Gọi thợ</button>-->
+<!--                        <button class="btn-login" data-ripple>Đăng nhập</button>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--        </div>-->
         <div class="head-top fixed-page-child">
             <div class="container clearfix">
                 <div class="logo">
                     <h1><a href=""><img src="img/Logo.svg" alt="ảnh"></a></h1>
                 </div>
+                <div class="menu-private">
+                    <button class="view-menu-mb">
+                        <span class="line-main line-1"></span>
+                        <span class="line-main line-2"></span>
+                        <span class="line-main line-3"></span>
+                    </button>
+                </div>
                 <div class="head-right clearfix">
                     <nav class="navigation">
                         <ul class="menu clearfix">
                             <li><a href="#">Trang chủ</a></li>
-                            <li class="has-dropdown"><a href="#">Các dịch vụ<i class="fas fa-angle-down"></i></a>
+                            <li class="has-dropdown"><a href="#">Các dịch vụ</a><i class="fas fa-angle-down"></i>
                                 <ul class="dropdown-child">
                                     <li><a href="#">Dịch vụ 1</a></li>
                                     <li><a href="#">Dịch vụ 2</a></li>
@@ -52,7 +87,15 @@
 
                             </li>
                             <li><a href="#">Tin tức</a></li>
-                            <li><a href="#">Chính sách pháp lý<i class="fas fa-angle-down"></i></a></li>
+                            <li class="has-dropdown">
+                                <a href="#">Chính sách pháp lý</a>
+                                <i class="fas fa-angle-down"></i>
+                                <ul class="dropdown-child">
+                                    <li><a href="#">Chính sách 1</a></li>
+                                    <li><a href="#">Chính sách 2</a></li>
+                                    <li><a href="#">Chính sách 3</a></li>
+                                </ul>
+                            </li>
                         </ul>
                     </nav>
                     <div class="btn-blockx">
@@ -69,7 +112,7 @@
                         <li><a href="#">Trang chủ</a><i class="fa fa-caret-right"></i></li>
                         <li><a href="#">Các dịch vụ</a><i class="fa fa-caret-right"></i></li>
                         <li><a href="#">Dịch vụ gia đình</a><i class="fa fa-caret-right"></i></li>
-                        <li><a href="#">Điều hoà</a><i class="fa fa-caret-right"></i></li>
+                        <li><a href="#">Điều hoà</a></li>
                     </ul>
                 </div>
 
@@ -83,19 +126,19 @@
             <div class="container">
                 <h2 class="title-page-child">Chi tiết dịch vụ</h2>
                 <div class="row">
-                    <div class="col-md-4" data-aos="fade-up" data-aos-duration="500">
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-duration="500">
                         <div class="box-services">
                             <h3 class="title-services">Chuyên nghiệp - Tận tâm</h3>
                             <p class="sub-services">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
                         </div>
                     </div>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="250" data-aos-duration="500">
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="250" data-aos-duration="500">
                         <div class="box-services">
                             <h3 class="title-services">Phục vụ nhanh chóng</h3>
                             <p class="sub-services">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
                         </div>
                     </div>
-                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
+                    <div class="col-md-4 col-sm-6" data-aos="fade-up" data-aos-delay="500" data-aos-duration="500">
                         <div class="box-services">
                             <h3 class="title-services">Dịch vụ tiêu chuẩn</h3>
                             <p class="sub-services">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries</p>
@@ -252,14 +295,14 @@
     <footer class="footer">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-lg-4 ">
                     <div class="logo-foot"><a href="#"><img src="img/logo-footer.svg" alt="ảnh"></a></div>
                     <div class="sub-foot">Sed vitae diam. Suspendisse vel justo mattis magna vestibulum molestie. Ut Nulla facilis In hac habitasse platea dictumst. Aliquam tincidunt aliquet nunc. Ut tincidunt magna in eros. Vivamus a metus.</div>
                 </div>
-                <div class="col-md-1"></div>
-                <div class="col-md-7">
+                <div class="col-lg-1"></div>
+                <div class="col-lg-7">
                     <div class="row foot-right">
-                        <div class="col-md-4 ">
+                        <div class="col-md-4">
                             <h4 class="title-foot">dịch vụ</h4>
                             <ul class="list-foot">
                                 <li><a href="#">Gia đình</a></li>
@@ -279,8 +322,10 @@
                         </div>
                         <div class="col-md-4">
                             <h4 class="title-foot">mạng xã hội</h4>
-                            <a href="#" class="icon-fb"><img src="img/icon-fb.svg" alt="ảnh"></a>
-                            <a href="#" class="icon-yt"><img src="img/icon-yt.svg" alt="ảnh"></a>
+                            <div class="center-mb">
+                                <a href="#" class="icon-fb"><img src="img/icon-fb.svg" alt="ảnh"></a>
+                                <a href="#" class="icon-yt"><img src="img/icon-yt.svg" alt="ảnh"></a>
+                            </div>
                         </div>
                     </div>
                 </div>

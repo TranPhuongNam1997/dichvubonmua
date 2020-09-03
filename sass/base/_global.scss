@@ -45,3 +45,8 @@ body{
   height: 100%;
   z-index: 99;
 }
+@include mobile-horizontal{
+  .hidden-767{
+    display: none;
+  }
+}
