@@ -206,6 +206,7 @@ section.about-us{
       text-align: center;
       line-height: 50px;
       @include mobile{
+        display: none;
         margin-right: 0;
         margin-bottom: 15px;
       }
@@ -229,6 +230,9 @@ section.about-us{
         font-size: 24px;
         line-height: 30px;
         margin-bottom: 4px;
+        span{
+          display: none;
+        }
         @include tablet{
           font-size: 20px;
         }
@@ -237,6 +241,9 @@ section.about-us{
         }
         @include mobile{
           font-size: 16px;
+          span{
+            display: inline;
+          }
         }
       }
       .sub-step{
@@ -813,10 +820,6 @@ section.about-us{
 
 
 .box-call{
-
-
-
-
   width: 682px;
   position: absolute;
   top: 176px;
@@ -836,6 +839,12 @@ section.about-us{
     width: 100%;
     padding: 0 15px;
   }
+  @include mobile-horizontal{
+    margin-top: 20px;
+  }
+  //@include mobile{
+  //  margin-top: 15px;
+  //}
 }
 .item-info{
   margin-bottom: 20px;
@@ -934,6 +943,9 @@ section.about-us{
   @include mobile-horizontal{
     font-size: 22px;
   }
+  @include mobile{
+    margin-bottom: 5px;
+  }
 }
 .list-question{
   >li{
@@ -962,6 +974,13 @@ section.about-us{
         transition: all 0.3s;
         i{
           color: #349A1B;
+        }
+      }
+      @include mobile{
+        font-size: 14px;
+        line-height: 19px;
+        i{
+          font-size: 15px;
         }
       }
 

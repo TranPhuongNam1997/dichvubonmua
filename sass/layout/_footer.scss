@@ -21,7 +21,7 @@ footer{
   }
   @include mobile{
     margin-top: 25px;
-    text-align: center;
+    //text-align: center;
   }
 }
 .title-foot{
@@ -30,9 +30,9 @@ footer{
   color: #DEDEDE;
   margin-bottom: 14px;
   text-transform: uppercase;
-  @include mobile{
-    text-align: center;
-  }
+  //@include mobile{
+  //  text-align: center;
+  //}
 }
 .list-foot{
   li{
@@ -49,9 +49,9 @@ footer{
   @include mobile-horizontal{
     margin-bottom: 30px;
   }
-  @include mobile{
-    text-align: center;
-  }
+  //@include mobile{
+  //  text-align: center;
+  //}
 }
 .foot-right{
   margin-top: 87px;
@@ -102,8 +102,8 @@ a.btn-scrolltop {
     transition: all 0.3s;
   }
 }
-.center-mb{
-  @include mobile{
-    text-align: center;
-  }
-}
+//.center-mb{
+//  @include mobile{
+//    text-align: center;
+//  }
+//}

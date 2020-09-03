@@ -653,6 +653,9 @@ header {
   @media (max-width: 991px) {
     .head-right {
       padding: 9px 0; } }
+  @media only screen and (max-width: 576px) {
+    .head-right {
+      padding: 16px 0; } }
   .head-right .navigation {
     display: inline-block; }
     @media (max-width: 991px) {
@@ -955,6 +958,7 @@ section.about-us {
     line-height: 50px; }
     @media only screen and (max-width: 576px) {
       .list-procedure li .number-order {
+        display: none;
         margin-right: 0;
         margin-bottom: 15px; } }
   .list-procedure li .block-step {
@@ -976,6 +980,8 @@ section.about-us {
       font-size: 24px;
       line-height: 30px;
       margin-bottom: 4px; }
+      .list-procedure li .block-step .name-step span {
+        display: none; }
       @media (max-width: 991px) {
         .list-procedure li .block-step .name-step {
           font-size: 20px; } }
@@ -984,7 +990,9 @@ section.about-us {
           font-size: 18px; } }
       @media only screen and (max-width: 576px) {
         .list-procedure li .block-step .name-step {
-          font-size: 16px; } }
+          font-size: 16px; }
+          .list-procedure li .block-step .name-step span {
+            display: inline; } }
     .list-procedure li .block-step .sub-step {
       font-size: 14px;
       line-height: 20px;
@@ -1482,6 +1490,9 @@ section.about-us {
       margin-top: 50px;
       width: 100%;
       padding: 0 15px; } }
+  @media only screen and (max-width: 767px) {
+    .box-call {
+      margin-top: 20px; } }
 
 .item-info {
   margin-bottom: 20px; }
@@ -1565,6 +1576,9 @@ section.about-us {
   @media only screen and (max-width: 767px) {
     .title-question {
       font-size: 22px; } }
+  @media only screen and (max-width: 576px) {
+    .title-question {
+      margin-bottom: 5px; } }
 
 .list-question > li {
   border-bottom: 1px solid #C4C4C4; }
@@ -1590,6 +1604,12 @@ section.about-us {
       transition: all 0.3s; }
       .list-question > li > a:hover i {
         color: #349A1B; }
+    @media only screen and (max-width: 576px) {
+      .list-question > li > a {
+        font-size: 14px;
+        line-height: 19px; }
+        .list-question > li > a i {
+          font-size: 15px; } }
   .list-question > li ul li p {
     line-height: 30px;
     margin-bottom: 13px; }
@@ -1618,8 +1638,7 @@ footer {
       margin-top: 35px; } }
   @media only screen and (max-width: 576px) {
     .logo-foot {
-      margin-top: 25px;
-      text-align: center; } }
+      margin-top: 25px; } }
 
 .title-foot {
   font-size: 16px;
@@ -1627,9 +1646,6 @@ footer {
   color: #DEDEDE;
   margin-bottom: 14px;
   text-transform: uppercase; }
-  @media only screen and (max-width: 576px) {
-    .title-foot {
-      text-align: center; } }
 
 .list-foot li {
   margin-bottom: 10px; }
@@ -1642,9 +1658,6 @@ footer {
 @media only screen and (max-width: 767px) {
   .list-foot {
     margin-bottom: 30px; } }
-@media only screen and (max-width: 576px) {
-  .list-foot {
-    text-align: center; } }
 
 .foot-right {
   margin-top: 87px; }
@@ -1693,10 +1706,6 @@ a.btn-scrolltop {
     background: #44b11f;
     transition: all 0.3s; }
 
-@media only screen and (max-width: 576px) {
-  .center-mb {
-    text-align: center; } }
-
 button[data-ripple] {
   position: relative; }
 
@@ -1716,6 +1725,9 @@ button[data-ripple] {
   @media (max-width: 991px) {
     .btn-call-mechanic {
       padding: 9px 24px; } }
+  @media (max-width: 740px) {
+    .btn-call-mechanic {
+      display: none; } }
 
 .btn-login {
   border: 1px solid #349A1B;
@@ -1734,6 +1746,19 @@ button[data-ripple] {
   @media (max-width: 991px) {
     .btn-login {
       padding: 8px 12px; } }
+  @media only screen and (max-width: 576px) {
+    .btn-login {
+      display: none; } }
+
+.btn-login-icon {
+  display: none;
+  border: none;
+  color: #349A1B;
+  background: none; }
+  @media only screen and (max-width: 576px) {
+    .btn-login-icon {
+      display: block;
+      margin-right: -6px; } }
 
 .btn-callnow {
   background-image: linear-gradient(to right, #349A1B 0%, #8EBD00 51%, #349A1B 100%);
@@ -1799,7 +1824,7 @@ button[data-ripple] {
       padding: 10px 20px; } }
   @media only screen and (max-width: 767px) {
     .btn-contact {
-      margin-bottom: 20px; } }
+      margin-bottom: 30px; } }
 
 button.btn-call-mechanic.call-mechanic-child {
   width: 170px; }

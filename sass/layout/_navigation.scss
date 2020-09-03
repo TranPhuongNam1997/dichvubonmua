@@ -9,6 +9,9 @@
   @include tablet{
     padding: 9px 0;
   }
+  @include mobile{
+    padding: 16px 0;
+  }
   .navigation{
     display: inline-block;
     @include tablet{

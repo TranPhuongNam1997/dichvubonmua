@@ -22,6 +22,9 @@ button[data-ripple]{
   @include tablet{
     padding: 9px 24px;
   }
+  @media (max-width: 740px) {
+    display: none;
+  }
 }
 .btn-login{
   border: 1px solid #349A1B;
@@ -41,6 +44,20 @@ button[data-ripple]{
   @include tablet{
     padding: 8px 12px;
   }
+  @include mobile{
+    display: none;
+  }
+}
+.btn-login-icon{
+  display: none;
+  border: none;
+  color: #349A1B;
+  background: none;
+  @include mobile{
+    display: block;
+    margin-right: -6px;
+  }
+
 }
 .btn-callnow{
   background-image: linear-gradient(to right, #349A1B 0%, #8EBD00 51%, #349A1B 100%);
@@ -110,7 +127,7 @@ button[data-ripple]{
     padding: 10px 20px;
   }
   @include mobile-horizontal{
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 }
 button.btn-call-mechanic.call-mechanic-child{
