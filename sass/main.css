@@ -633,11 +633,31 @@ header {
             padding: 10px 14px; }
             .head-right .navigation .menu > li .dropdown-child li a:hover {
               background: rgba(52, 154, 27, 0.78); }
+        @media (max-width: 991px) {
+          .head-right .navigation .menu > li .dropdown-child {
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+            top: 0;
+            width: 100%;
+            border-radius: 0; }
+            .head-right .navigation .menu > li .dropdown-child li a {
+              padding: 10px 15px 10px 35px;
+              background: #fff;
+              color: #202020; }
+              .head-right .navigation .menu > li .dropdown-child li a:hover {
+                background: #E5EBE4; } }
       .head-right .navigation .menu > li:hover .dropdown-child {
         top: 35px;
         transition: all 0.3s;
         opacity: 1;
         visibility: visible; }
+        @media (max-width: 991px) {
+          .head-right .navigation .menu > li:hover .dropdown-child {
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+            top: 0; } }
     @media (max-width: 991px) {
       .head-right .navigation .menu {
         width: 300px;

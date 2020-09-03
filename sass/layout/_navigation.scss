@@ -66,12 +66,36 @@
               }
             }
           }
+          @include tablet{
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+            top: 0;
+            width: 100%;
+            border-radius: 0;
+            li{
+              a{
+                padding: 10px 15px 10px 35px;
+                background: #fff;
+                color: #202020;
+                &:hover{
+                  background: #E5EBE4;
+                }
+              }
+            }
+          }
         }
         &:hover .dropdown-child{
           top: 35px;
           transition: all 0.3s;
           opacity: 1;
           visibility: visible;
+          @include tablet{
+            position: relative;
+            opacity: 1;
+            visibility: visible;
+            top: 0;
+          }
         }
       }
       @include tablet{
