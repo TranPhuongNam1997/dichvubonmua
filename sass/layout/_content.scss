@@ -860,6 +860,12 @@ section.about-us{
   textarea{
     height: 135px;
   }
+  i.fas.fa-angle-down{
+      &.active{
+        transform: rotate(180deg);
+        margin-top: -8px;
+      }
+    }
 }
 
 .box-field{

@@ -1500,6 +1500,9 @@ section.about-us {
     -webkit-appearance: none; }
   .item-info textarea {
     height: 135px; }
+  .item-info i.fas.fa-angle-down.active {
+    transform: rotate(180deg);
+    margin-top: -8px; }
 
 .box-field {
   position: relative; }
