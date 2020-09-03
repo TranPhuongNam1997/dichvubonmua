@@ -61,6 +61,7 @@
           top: 0;
           width: 100%;
           border-radius: 0;
+          transition: unset;
           li{
             a{
               padding: 10px 15px 10px 35px;
@@ -83,6 +84,7 @@
           opacity: unset;
           visibility: unset;
           //top: 0;
+          transition: unset;
         }
       }
       >a{
