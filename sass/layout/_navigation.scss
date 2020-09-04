@@ -34,26 +34,68 @@
 
     .has-dropdown{
       .dropdown-child{
-        width: 183px;
+        width: 200px;
         opacity: 0;
         visibility: hidden;
         position: absolute;
-        left: 0;
+        left: 50%;
+        transform: translateX(-50%);
         top: 80px;
         transition: all 0.3s;
         //background: #349a1b;
-        border-radius: 10px;
-        overflow: hidden;
+
+        padding: 15px 0;
+        border-radius: 5px;
+        background: #fff;
+        border-top: 2px solid #349a1b;
+        margin-top: 10px;
+        box-shadow: 1px 3px 9px 0 rgba(56, 56, 56, 0.15);
+        @include tablet{
+          border-top: none;
+          box-shadow: none;
+          margin-top: 0;
+          left: 0;
+          transform: translateX(0);
+          padding: 0;
+        }
+        &:before{
+          content: '';
+          position: absolute;
+          top: -12px;
+          height: 10px;
+          width: 100%;
+          background: transparent;
+          @include tablet{
+            display: none;
+          }
+        }
+        &:after{
+          content: '';
+          border-left: 7px solid transparent;
+          border-right: 7px solid transparent;
+          border-bottom: 7px solid #349a1b;
+          position: absolute;
+          top: -9px;
+          left: 50%;
+          transform: translateX(-50%);
+          @include tablet{
+            display: none;
+          }
+        }
 
         li{
           display: block;
           a{
-            background: #349a1b;
+            //background: #349a1b;
             display: block;
-            color: #fff;
-            padding: 10px 14px;
+            color: #202020;
+            padding: 10px 20px;
             &:hover{
-              background: rgba(52, 154, 27, 0.78);
+              //background: rgba(52, 154, 27, 0.78);
+              color: #349a1b;
+            }
+            @include tablet{
+              color: #202020;
             }
           }
         }

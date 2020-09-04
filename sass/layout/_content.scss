@@ -243,6 +243,7 @@ section.about-us{
           font-size: 16px;
           span{
             display: inline;
+            color: #349a1b;
           }
         }
       }
@@ -501,7 +502,11 @@ section.about-us{
   }
   @include mobile{
     padding: 20px 0;
-
+    .col-md-4.col-sm-6:last-child{
+      .box-services{
+        margin-bottom: 0;
+      }
+    }
   }
 }
 .title-page-child{
@@ -520,6 +525,7 @@ section.about-us{
   }
   @include mobile{
     font-size: 18px;
+    line-height: 26px;
   }
   &:after{
     content: '';
@@ -580,6 +586,9 @@ section.about-us{
   padding: 50px 0;
   .title-page-child{
     margin-bottom: 36px;
+    @include mobile{
+      margin-bottom: 30px;
+    }
   }
   @include tablet{
     padding: 50px 0;
@@ -599,6 +608,9 @@ section.about-us{
   border-radius: 5px;
   padding: 3px 32px;
   margin-bottom: 30px;
+  @include mobile{
+    margin-bottom: 10px;
+  }
   .item-pro{
     padding: 21px 0;
     border-top: 1px dashed #DADADA;
@@ -787,34 +799,47 @@ section.about-us{
 
 .banner-services{
   position: relative;
-  .bread-crumb{
-    position: absolute;
-    top: 85px;
-    left: 0;
-    width: 100%;
-    @include tablet{
-      top: 53px;
-    }
-    ul{
-      padding: 18px 0 56px;
-      li{
-        display: inline-block;
-        a{
-          font-size: 12px;
-          line-height: 15px;
-          color: #7a7a7a;
-          &:hover{
-            color: #349A1B;
-            text-decoration: underline;
-          }
 
+}
+.bread-crumb{
+  //position: absolute;
+  //top: 85px;
+  //left: 0;
+  //width: 100%;
+  //@include tablet{
+  //  top: 53px;
+  //}
+  ul{
+    padding: 20px 0 0;
+    li{
+      display: inline-block;
+      a{
+        font-size: 12px;
+        line-height: 15px;
+        color: #7a7a7a;
+        &:hover{
+          color: #349A1B;
+          text-decoration: underline;
         }
-        i{
-          margin: 0 10px;
-          color: #7a7a7a;
-        }
+
+      }
+      i{
+        margin: 0 10px;
+        color: #7a7a7a;
       }
     }
+  }
+}
+.bg-white{
+  background: #fff;
+
+}
+.bread-crumb.bg-white{
+  @include mobile-horizontal{
+    ul{
+      padding: 20px 0;
+    }
+
   }
 }
 
@@ -903,21 +928,19 @@ section.about-us{
   }
 }
 .fix-252{
-  height: 252px;
+  height: 280px;
   background: #fff;
   @media (max-width: 1366px) {
-    height: 325px;
+    height: 365px;
   }
   @media (max-width: 1300px) {
 
-    height: 50px;
-  }
-  @include mobile-horizontal{
-    height: 25px;
-  }
-  @include mobile{
     height: 20px;
   }
+  @include mobile-horizontal{
+    height: 0;
+  }
+
 }
 
 .section-question{
