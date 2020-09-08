@@ -878,6 +878,17 @@ section.about-us {
   margin-bottom: 30px;
   margin-right: 29px;
   float: left; }
+  .list-services li .box-us {
+    text-align: center;
+    display: block; }
+    @media only screen and (max-width: 576px) {
+      .list-services li .box-us {
+        display: flex;
+        align-items: center;
+        height: auto; } }
+    .list-services li .box-us:hover .txt-services {
+      color: #319925;
+      transition: all 0.3s; }
   @media only screen and (max-width: 1199px) {
     .list-services li {
       width: 200px;
@@ -906,7 +917,8 @@ section.about-us {
   .list-services li .txt-services {
     font-size: 18px;
     line-height: 20px;
-    text-align: center; }
+    text-align: center;
+    transition: all 0.3s; }
   .list-services li:nth-child(1) img {
     margin: 20px auto 16px; }
     @media only screen and (max-width: 1199px) {

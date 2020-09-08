@@ -73,6 +73,20 @@ section.about-us{
     margin-bottom: 30px;
     margin-right: 29px;
     float: left;
+
+    .box-us{
+      text-align: center;
+      display: block;
+      @include mobile{
+        display: flex;
+        align-items: center;
+        height: auto;
+      }
+      &:hover .txt-services{
+        color: $c-gr;
+        transition: all 0.3s;
+      }
+    }
     @include tablet-horizontal{
       width: 200px;
       height: 186px;
@@ -103,6 +117,7 @@ section.about-us{
       font-size: 18px;
       line-height: 20px;
       text-align: center;
+      transition: all 0.3s;
     }
     &:nth-child(1){
       img{
