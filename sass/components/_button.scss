@@ -25,6 +25,14 @@ button[data-ripple]{
   @media (max-width: 740px) {
     display: none;
   }
+  &.btn-call-mechanic-form{
+    @media (max-width: 740px) {
+      display: block;
+    }
+    @include mobile-horizontal{
+      margin: 0 auto;
+    }
+  }
 }
 .btn-login{
   border: 1px solid #349A1B;

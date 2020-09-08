@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Duanbonmua</title>
+    <title>Gọi thợ</title>
 
     <link rel="stylesheet" href="libs/css/bootstrap.min.css">
 
@@ -104,7 +104,7 @@
                         </ul>
                     </nav>
                     <div class="btn-blockx">
-                        <button class="btn-call-mechanic" data-ripple>Gọi thợ</button>
+                        <button class="btn-call-mechanic" data-ripple data-toggle="modal" data-target="#md-call">Gọi thợ</button>
                         <button class="btn-login" data-ripple>Đăng nhập</button>
                         <button class="btn-login-icon"><i class="fas fa-sign-in-alt"></i></button>
                     </div>
@@ -116,74 +116,11 @@
             <img src="img/banner-goitho.png" alt="ảnh" class="w-100">
 
         </div>
-        <div class="box-call  wow fadeInRight">
-            <div class="block-call">
-                <div class="item-info">
-                    <label class="field">Địa điểm làm viêc <span>*</span></label>
-                    <div class="box-field">
-                        <input type="text">
-                        <i class="fas fa-map-marker-alt"></i>
-                    </div>
 
-                </div>
-                <div class="item-info">
-                    <label class="field">Chọn dịch vụ <span>*</span></label>
-                    <div class="box-field">
-                        <select name="" id="">
-                            <option value="">dịch vụ 1</option>
-                            <option value="">dịch vụ 2</option>
-                            <option value="">dịch vụ 3</option>
-                        </select>
-                        <i class="fas fa-angle-down"></i>
-                    </div>
-
-                </div>
-                <div class="item-info">
-                    <label class="field">Lịch làm việc <span>*</span></label>
-                    <div class="box-field">
-                        <input type="text" class="calendar-dv">
-                        <i class="far fa-calendar-alt"></i>
-                    </div>
-
-                </div>
-                <div class="item-info">
-                    <label class="field">Thời gian làm việc <span>*</span></label>
-                    <div class="row">
-                        <div class="col-md-6 box-zone clearfix">
-                            <div class="name-from">Từ</div>
-                            <div class="box-field">
-                                <input type="text" class="calendar-dv">
-                                <i class="far fa-calendar-alt"></i>
-                            </div>
-                        </div>
-                        <div class="col-md-6 box-zone clearfix">
-                            <div class="name-from">Đến</div>
-                            <div class="box-field">
-                                <input type="text" class="calendar-dv">
-                                <i class="far fa-calendar-alt"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="item-info">
-                    <label class="field">Mã giảm giá</label>
-                    <input type="text">
-                </div>
-                <div class="item-info">
-                    <label class="field">Ghi chú</label>
-                    <textarea></textarea>
-                </div>
-                <div class="text-right">
-                    <button class="btn-call-mechanic btn-call-mechanic-form" data-ripple="">Gọi thợ</button>
-                </div>
-            </div>
-
-        </div>
     </header>
     <main class="main-page-child">
 
-        <div class="fix-252"></div>
-        <div class="bread-crumb bg-white">
+        <div class="bread-crumb">
             <div class="container">
                 <ul>
                     <li><a href="#">Trang chủ</a><i class="fa fa-caret-right"></i></li>
@@ -195,6 +132,43 @@
 
             </div>
         </div>
+        <section class="section-detail-services sc-dv">
+            <div class="container">
+                <h2 class="title-page-child">Dịch vụ gia đình</h2>
+                <div class="row">
+                    <div class="col-md-3 col-sm-6  aos-init aos-animate" data-aos="fade-up"  data-aos-duration="200">
+                        <div class="box-sv">
+                            <img src="img/icon-dh.svg" alt="ảnh">
+                            <h3 class="name-sv">Điều hòa</h3>
+                            <div class="slogan-sv">Cung cấp các dịch vụ sửa chữa, bảo dưỡng</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="400">
+                        <div class="box-sv">
+                            <img src="img/icon-bnl.svg" alt="ảnh">
+                            <h3 class="name-sv">Bình nóng lạnh</h3>
+                            <div class="slogan-sv">Cung cấp các dịch vụ sửa chữa, bảo dưỡng</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="600">
+                        <div class="box-sv">
+                            <img src="img/icon-dh.svg" alt="ảnh">
+                            <h3 class="name-sv">Tủ lạnh - Máy giặt</h3>
+                            <div class="slogan-sv">Cung cấp các dịch vụ sửa chữa, bảo dưỡng</div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6 aos-init aos-animate" data-aos="fade-up" data-aos-duration="800">
+                        <div class="box-sv">
+                            <img src="img/icon-dh.svg" alt="ảnh">
+                            <h3 class="name-sv">Ti vi</h3>
+                            <div class="slogan-sv">Cung cấp các dịch vụ sửa chữa, bảo dưỡng</div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
         <section class="section-procedure">
             <div class="container">
                 <div class="txt-sc text-center">quy trình</div>
