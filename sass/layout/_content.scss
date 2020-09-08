@@ -497,7 +497,7 @@ section.about-us{
   }
 }
 .section-detail-services{
-  padding: 100px 0 50px;
+  padding: 50px 0 50px;
   @include tablet{
     padding: 50px 0;
   }
@@ -818,12 +818,15 @@ section.about-us{
     li{
       display: inline-block;
       a{
-        font-size: 12px;
+        font-size: 13px;
         line-height: 15px;
         color: #7a7a7a;
         &:hover{
           color: #349A1B;
           text-decoration: underline;
+        }
+        @include mobile-horizontal{
+          font-size: 13px;
         }
 
       }
